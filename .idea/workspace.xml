@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85abbae9-851c-45c6-876b-a5aa6dc063c2" name="Default Changelist" comment="" />
+    <list default="true" id="85abbae9-851c-45c6-876b-a5aa6dc063c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPUNerd_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CPUNerd_project/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPUNerd_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CPUNerd_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CPUNerd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CPUNerd/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,8 +17,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YjSPoNsKDNd0mikdsFqma8KaUw" />
   <component name="ProjectViewState">
@@ -21,7 +31,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -67,6 +79,7 @@
       <updated>1583454488237</updated>
       <workItem from="1583454490147" duration="562000" />
       <workItem from="1583455345735" duration="3270000" />
+      <workItem from="1583517091480" duration="2498000" />
     </task>
     <servers />
   </component>

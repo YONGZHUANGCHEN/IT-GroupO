@@ -22,7 +22,7 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('', views.index, name='indx'),
+    path('', views.index, name='index'),
     path('cpunerd/', include('CPUNerd.urls')),
     #开头为cpunerd/的所有urls都会自动进行匹配
     path('admin/', admin.site.urls),
