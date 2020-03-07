@@ -1,62 +1,29 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% load extratags %}
 {% block csstyle %}
-    <style>
-    .profile
-    {
-        width: 80%;
-        height: 500px;
-        margin: 50px 0;
-        border: 1px solid #eee;
-    }
-    .profile > p{
-        height: 40px;
-        background-color: lightgray;
-        color: black;
-        line-height: 40px;
-        padding-left: 10px;
-    }
-    img{
-        width: 150px;
-        height: 150px;
-        border-radius: 75px;
-        position: absolute;
-        transform: translateX(-50%);left: 50%;
-        top:40px;
-    }
-    div.right{
-        float: left;
-        width: 60%;
-    }
-    div.right > div{
-        border-bottom: 1px solid #eee;
-        padding: 17px 30px;
-    }
-    div.right > div > input{
-        width: 300px;
-    }
-    </style>
+    <link href="{% static 'css/profile.css' %}" rel="stylesheet">
 {%  endblock %}
 {% block content %}
-    <div style="width: 80%;margin: auto">
+    <div class="center-content">
        <div class="profile">
            <p>个人信息</p>
-           <form style="overflow: hidden;margin-top: -10px" method="post" action="{% url 'user_profile:profile' %}" id="form1">
+           <form method="post" action="{% url 'user_profile:profile' %}" id="form1">
                <input name="id" style="display: none;" value="{{ user.id }}"/>
-               <div style="float: left;width: 40%;border-right:1px solid #eee">
-                   <div style="height: 300px; position: relative;border-bottom: 1px solid #eee;">
+               <div class="left">
+                   <div>
                        <img {% if user.image %} src="{{ user.image.url }}" {% endif %} id="avatar">
-                       <input type="file" name="photo" style="display: none;" id="upload-img"/>
+                       <input type="file" name="photo" id="upload-img"/>
                        {% if myself %}
-                       <button type="button" class="btn btn-info" id="upload-img-btn" style="position: absolute;transform: translateX(-50%);left: 50%; bottom:40px">
+                       <button type="button" class="btn btn-info" id="upload-img-btn">
                            修改头像
                        </button>
                        {% endif %}
 
                    </div>
-                   <div style="height: 150px;position: relative">
+                   <div>
                        {% if myself %}
-                           <div style="position: absolute;top: 50%;transform: translateY(-50%)translateX(-50%);left: 50%;">
+                           <div>
                             <input type="password" name="password" id="password">
                             <button type="button" class="btn btn-info" onclick="change_password()">
                                修改密码
@@ -87,8 +54,8 @@
                        <span>邮&nbsp&nbsp箱:</span>&nbsp&nbsp<input name="email" value="{{ user.email |format_none }}">
                    </div>
                    {% if myself %}
-                   <div style="border: none;position: relative;height: 94px;">
-                       <input type="submit" class="btn btn-info" style="width:100px;position: absolute;top: 50%;transform: translateY(-50%)translateX(-50%);left: 50%;">
+                   <div class="show-submit">
+                       <input type="submit" class="btn btn-info">
                    </div>
                    {% endif %}
                </div>
@@ -118,7 +85,7 @@
 
     function change_password() {
         var password = $("#password").val()
-        $.post("/reset-password/",{"password":password,"csrfmiddlewaretoken":"{{ csrf_token }}"},function(result){
+        $.post("{% url 'user_profile:reset-password' %}",{"password":password,"csrfmiddlewaretoken":"{{ csrf_token }}"},function(result){
             alert("修改成功");
           });
 
@@ -136,7 +103,7 @@
         formData.append("name", name);
         formData.append("csrfmiddlewaretoken", "{{ csrf_token }}");
         $.ajax({
-            url: "/change-avatar/",
+            url: "{% url 'user_profile:change-avatar' %}",
             type: 'POST',
             data: formData,
             processData: false,// ⑧告诉jQuery不要去处理发送的数据

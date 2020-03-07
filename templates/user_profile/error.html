@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block content %}
-    <div style="width: 80%;margin: auto">
-        <h2 style="color: red;"> {{ error }}</h2>
+    <div class="center-content">
+        <h2 class="error"> {{ error }}</h2>
     </div>
 {% endblock %}
