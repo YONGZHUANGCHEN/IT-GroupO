@@ -25,7 +25,7 @@ SECRET_KEY = '_cn#8(r8cjga^^hl^v&9@ymwph0jgg3tzz!maxsl%e6m2l9p-#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'CPUNerd.apps.CpunerdConfig',
+    'user_profile.apps.UserProfileConfig',
+    'user_profile.templatetags',
 
 ]
 
@@ -51,6 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+AUTH_USER_MODEL = 'user_profile.UserProfile'
 ROOT_URLCONF = 'CPUNerd_project.urls'
 
 TEMPLATES = [
@@ -123,3 +126,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+AUTHENTICATION_BACKENDS = ('user_profile.views.CustomBackend',)

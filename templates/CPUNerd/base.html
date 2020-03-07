@@ -33,7 +33,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">AMD</a>
           <a class="dropdown-item" href="#">Intel</a>
-
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">newreleased</a>
@@ -43,6 +43,22 @@
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
+      <ul class="navbar-nav mr-auto">
+          {% if request.user.is_authenticated %}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="user-profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {{ request.user }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="user-profile">
+                  <a class="dropdown-item" href="#">logout</a>
+                  <a class="dropdown-item" href="#">detail</a>
+                </div>
+              </li>
+          {% else %}
+              <li class="nav-item"><a class="nav-link" href="{% url 'user_profile:register' %}">sign up</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'user_profile:login' %}">login</a></li>
+          {% endif %}
+      </ul>
   </div>
 </nav>
 
