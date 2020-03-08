@@ -3,6 +3,7 @@ from django.urls import path
 from django.urls import include
 from CPUNerd import views
 
+
 """CPUNerd_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:

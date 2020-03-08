@@ -1,0 +1,12 @@
+div#demo{
+    width: 60%;
+    height: 300px;
+    background-color: #8e8282;
+}
+div.carousel-item {
+    padding-left: 15%;
+}
+div.carousel-item > img{
+    width: 80%;
+    height: 300px;
+}

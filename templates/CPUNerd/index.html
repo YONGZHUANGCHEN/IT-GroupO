@@ -1,17 +1,42 @@
 {% extends 'base.html'%}
+{% load staticfiles %}
+{% block csstyle %}
+    <link href="{% static 'css/index.css' %}" rel="stylesheet">
+{%  endblock %}
+
 {%block content%}
-
-
-        <h1>This is the home page</h1>
+    <div class="center-content">
         <div>
-            <a href="/cpunerd/cpumatch">CPU Match</a>
-            <a href="/cpunerd/ranks">Ranks</a>
-            <a href="/cpunerd/categories">Categories</a>
-            <a href="/cpunerd/newreleased">New Released</a>
-            <a href="/cpunerd/glossary">Glossary</a>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+              </ul>
+              <div class="carousel-inner">
+                   {% for item in obj %}
+                    <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
+
+                      <img src="{{ item.image.url }}">
+                      <div class="carousel-caption">
+                        <h3>{{ item.description }}</h3>
+                      </div>
+                    </div>
+                   {% endfor %}
+              </div>
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+
+            </div>
         </div>
 
+        <h1>This is the home page</h1>
 
+    </div>
 
 
 {%endblock%}
