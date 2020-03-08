@@ -16,7 +16,6 @@
               <div class="carousel-inner">
                    {% for item in obj %}
                     <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
-
                       <img src="{{ item.image.url }}">
                       <div class="carousel-caption">
                         <h3>{{ item.description }}</h3>
@@ -30,11 +29,14 @@
               <a class="carousel-control-next" href="#demo" data-slide="next">
                 <span class="carousel-control-next-icon"></span>
               </a>
-
+            </div>
+            <div id="match" onclick="window.open('{% url 'CPUNerd:match' %}','_self')">
+                <img src="{% static 'img/match.png' %}">
             </div>
         </div>
 
-        <h1>This is the home page</h1>
+
+
 
     </div>
 

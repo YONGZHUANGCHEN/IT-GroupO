@@ -27,7 +27,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('cpunerd/', include('CPUNerd.urls')),
+    path('cpunerd/', include('CPUNerd.urls', namespace='CPUNerd')),
     path('user-profile/', include('user_profile.urls', namespace='user_profile')),
     #开头为cpunerd/的所有urls都会自动进行匹配
     path('admin/', admin.site.urls),
