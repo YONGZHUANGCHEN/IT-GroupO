@@ -1,3 +1,6 @@
+html,body{height:100%; width:100%; overflow:hidden; margin:0;
+padding:0;}
+
 li.nav-item {
     margin-left: 30px;
 }
@@ -22,3 +25,4 @@ div.center-content{
     width: 80%;
     margin: auto;
 }
+

@@ -14,14 +14,26 @@
                 <li data-target="#demo" data-slide-to="2"></li>
               </ul>
               <div class="carousel-inner">
-                   {% for item in obj %}
-                    <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
-                      <img src="{{ item.image.url }}">
+
+                    <div class="carousel-item active">
+                      <img src="{{ obj.0.image.url }}">
                       <div class="carousel-caption">
-                        <h3>{{ item.description }}</h3>
+                        <h3>{{ obj.0.description }}</h3>
                       </div>
                     </div>
-                   {% endfor %}
+                       <div class="carousel-item">
+                      <img src="{{ obj.1.image.url }}">
+                      <div class="carousel-caption">
+                        <h3>{{ obj.1.description }}</h3>
+                      </div>
+                    </div>
+                       <div class="carousel-item">
+                      <img src="{{ obj.2.image.url }}">
+                      <div class="carousel-caption">
+                        <h3>{{ obj.2.description }}</h3>
+                      </div>
+                    </div>
+
               </div>
               <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
@@ -34,6 +46,37 @@
                 <img src="{% static 'img/match.png' %}">
             </div>
         </div>
+
+
+        <div class="cpu-list">
+            <div class="list-group">
+                {% for item in obj %}
+                  <a href="#" class="list-group-item">
+                      <div style="width: 60px;height: 60px;float: left">
+                        <img src="{{ item.image.url }}" style="height:100%;width: 100%;" >
+                      </div>
+
+                      <div style="float: left;height: 60px;padding-left: 20px;width: calc(100% - 60px);">
+                           <p style="font-size: 26px;">{{ item.description }}</p>
+                          <div >
+                              <span>
+                                   category:{{ item.get_category_display }}
+                              </span>
+
+                              <span>
+                                   purpose:{{ item.get_purpose_display }}
+                               </span>
+                              <span style="float: right;display: inline-block">
+                                  price:<span style="color: red">${{ item.price }}</span>
+                               </span>
+
+                          </div>
+                      </div>
+                  </a>
+                {% endfor %}
+            </div>
+        </div>
+
 
 
 

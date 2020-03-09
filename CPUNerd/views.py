@@ -7,7 +7,7 @@ from user_profile.views import LoginRequiredMixin
 # Create your views here.
 
 def index(request):
-    cpu_obj_list = CpuModel.objects.all().order_by("-mark")[0:3]
+    cpu_obj_list = CpuModel.objects.all().order_by("-mark")
     return render(request, 'cpunerd/index.html', {'obj': cpu_obj_list})
 
 
