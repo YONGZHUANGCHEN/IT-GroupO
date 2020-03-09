@@ -4,6 +4,7 @@ div.center-content{
     height: 90%;
     width: 86%;
     padding: 3%;
+    overflow: hidden;
 }
 div#demo{
     width: 60%;
@@ -11,10 +12,10 @@ div#demo{
     float: left;
 }
 div.carousel-item {
-    padding-left: 15%;
+    padding-left: 0%;
 }
 div.carousel-item > img{
-    width: 80%;
+    width: 100%;
     height: 300px;
 }
 div#match {
@@ -36,6 +37,11 @@ div.center-content > div:nth-child(2){
     width: 60%;
 }
 
+div.cpu-list{
+    float: left;
+    display: inline-block;
+}
+
 div.cpu-list > div.list-group > a.list-group-item {
         background-color: none;
 }
@@ -43,3 +49,20 @@ div.cpu-list > div.list-group > a.list-group-item:hover{
     background-color: darkgrey;
     color: white;
 }
+
+div.rank-list{
+    margin-top: 20px;
+    display: inline-block;
+    width: 30%;
+    float: right;
+    border: solid 1px #ddd;
+    padding: 10px 10px 0 10px;
+}
+
+div.rank-list{border:solid 1px #ddd;padding:10px 10px 0 10px;}
+div.rank-list li{height:16px;line-height:16px;overflow:hidden;position:relative;padding:0 70px 0 30px;margin:0 0 10px 0;}
+div.rank-list li em{background:url(../img/mun.gif) no-repeat;width:20px;height:16px;overflow:hidden;display:block;position:absolute;left:0;top:0;text-align:center;font-style:normal;color:#333;}
+div.rank-list li em{background-position:0 -16px;}
+div.rank-list li.top em{background-position:0 0;color:#fff;}
+div.rank-list li .num{position:absolute;right:0;top:0;color:#999;}
+

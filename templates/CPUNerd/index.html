@@ -76,9 +76,16 @@
             </div>
         </div>
 
-
-
-
+        <div class="rank-list">
+            <ol>
+                {% for item in obj %}
+                <li {% if forloop.counter0 < 2 %}class="top" {% endif %}>
+                    <em>{{ forloop.counter }}</em><p><a href="http://www.17sucai.com/" title="">{{ item.description }}</a></p><span class="num">{{ item.mark }}</span>
+                </li>
+                {% endfor %}
+            </ol>
+            <div class="clear"></div>
+        </div>
 
     </div>
 
