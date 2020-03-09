@@ -80,7 +80,7 @@
             <ol>
                 {% for item in obj %}
                 <li {% if forloop.counter0 < 2 %}class="top" {% endif %}>
-                    <em>{{ forloop.counter }}</em><p><a href="http://www.17sucai.com/" title="">{{ item.description }}</a></p><span class="num">{{ item.mark }}</span>
+                    <em>{{ forloop.counter }}</em><p><a href="{% url 'CPUNerd:cpu_detail' item.id %}" title="">{{ item.description }}</a></p><span class="num">{{ item.mark }}</span>
                 </li>
                 {% endfor %}
             </ol>
