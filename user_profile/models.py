@@ -11,4 +11,5 @@ class UserProfile(AbstractUser):
     phone = models.CharField(verbose_name="手机号", null=True, max_length=11)
     address = models.CharField(verbose_name="手机号", null=True, max_length=255)
     interest = models.CharField(max_length=255, null=True)
-    image = models.ImageField(max_length=1000, upload_to='avatar', verbose_name=u'头像', null=True, blank=True)
+    image = models.ImageField(max_length=1000, upload_to='avatar', verbose_name=u'头像', blank=True,
+                              default='avatar/default.jpg')

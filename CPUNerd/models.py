@@ -17,7 +17,7 @@ class CpuModel(models.Model):
 
 
 class CommentModel(models.Model):
-    cpu = models.ForeignKey(CpuModel, verbose_name='cpu', on_delete=models.CASCADE)
+    cpu = models.ForeignKey(CpuModel, verbose_name='cpu', on_delete=models.CASCADE, related_name='comment_list')
     user = models.ForeignKey(UserProfile, verbose_name='user', on_delete=models.CASCADE)
     content = models.CharField(verbose_name="内容", max_length=512)
     create_time = models.DateTimeField(auto_now_add=True)

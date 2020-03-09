@@ -21,4 +21,71 @@ article{
 .content_nav{width: 800px;  color: #777;margin: 0 auto;margin-top: 20px;margin-bottom: -15px;}
 .content-img{margin-top:10px;max-width: 80%}
 
-.comment-content-type
+div.send-comment{
+    padding: 15px;
+}
+
+div.send-comment > form {
+    position: relative;
+}
+div.send-comment > form > textarea {
+    margin: 0px;
+    width: 80%;
+    height: 50px;
+}
+div.send-comment > form > button
+{
+    position: absolute;
+    height: 50px;
+    width: 20%;
+}
+div.comment{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding-left: 15px;
+}
+div.comment > p{
+  background-color:aquamarine;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  width: 180px;
+}
+div.comment-item{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:center;
+  border-top:1px solid rgba(225, 225, 225, 0.8);
+}
+
+div.comment-item > img{
+  width: 60px;
+  height: 60px;
+  border-radius:30px;
+}
+
+div.comment-content{
+  display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width: calc(100% - 100px);
+}
+
+div.comment-content > div {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+p.comment-author {
+  color: #328EEB;
+  font-size: 26px;
+  font-weight: bold;
+}
+p.comment-publish-time {
+  font-size: 14px;
+}
+div.comment-content > p{
+  font-size: 16px;
+}

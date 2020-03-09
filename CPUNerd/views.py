@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, reverse, redirect
 from django.http import HttpResponse
-from CPUNerd.models import CpuModel
+from CPUNerd.models import CpuModel, CommentModel
 from django.views import View
 from user_profile.views import LoginRequiredMixin
 
@@ -36,3 +36,11 @@ class CpuDetailView(LoginRequiredMixin, View):
 
     def post(self, request):
         pass
+
+
+class CommentView(LoginRequiredMixin, View):
+    def post(self, request):
+        cpu_id = request.GET.get("id")
+        obj = CpuModel.objects.get(id=int(cpu_id))
+        CommentModel.objects.create(user=request.user,cpu=obj,content=request.POST.get("remark", ""))
+        return redirect(reverse('CPUNerd:cpu_detail', kwargs={'id': cpu_id}))

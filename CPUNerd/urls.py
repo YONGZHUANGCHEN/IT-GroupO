@@ -8,4 +8,5 @@ urlpatterns = [
     path('', index, name='index'),
     path('match/', MatchView.as_view(), name='match'),
     path('cpu-detail/<int:id>', CpuDetailView.as_view(), name='cpu_detail'),
+    path('comment/', CommentView.as_view(), name='comment'),
 ]
