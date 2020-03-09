@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% load extratags %}
+{% block csstyle %}
+<link href="{% static 'css/cpu_detail.css' %}" rel="stylesheet">
+{%  endblock %}
+
+{%block content%}
+    <div class="center-content">
+
+        <div class="artical_content">
+            <div class="content_head">
+                <h3 class="article_title">{{obj.description}}</h3>
+                <p class="time">发布时间：{{obj.update_time | strftime}}&nbsp;</p>
+            </div>
+            <article>
+                {{obj.content | safe}}
+            </article>
+            <div class="paging">
+                <div class="paging_left"><span>last article：</span>{% if last_obj %}<a href="{% url 'CPUNerd:cpu_detail' last_obj.0 %}">{{last_obj.1|truncatewords:"15"}}</a>{% endif %}</div>
+                <div class="paging_right"><span>next article：</span>{% if next_obj %}<a href="{% url 'CPUNerd:cpu_detail' next_obj.0 %}">{{ next_obj.1|truncatewords:"15"}}</a>{% endif %}</div>
+            </div>
+        </div>
+
+        <div class="">
+
+        </div>
+    </div>
+
+
+{%endblock%}

@@ -51,7 +51,7 @@
         <div class="cpu-list">
             <div class="list-group">
                 {% for item in obj %}
-                  <a href="#" class="list-group-item">
+                  <a href="{% url 'CPUNerd:cpu_detail' item.id %}" class="list-group-item">
                       <div style="width: 60px;height: 60px;float: left">
                         <img src="{{ item.image.url }}" style="height:100%;width: 100%;" >
                       </div>
