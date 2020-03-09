@@ -14,10 +14,33 @@ def index(request):
 
 class MatchView(LoginRequiredMixin, View):
     def get(self, request):
+
         return render(request, 'CPUNerd/match.html')
 
     def post(self, request):
-        pass
+        obj = CpuModel.objects.all()
+        core = request.POST.get('core', '')
+        min_price = request.POST.get('min_price', 0)
+        max_price = request.POST.get('max_price', 0)
+        purpose = request.POST.get('purpose', '')
+        label = request.POST.get('label', '')
+        if core:
+            obj = obj.filter(core=int(core))
+        if min_price:
+            obj = obj.filter(price__gte=int(min_price))
+        if max_price:
+            obj = obj.filter(price__lte=int(min_price))
+        if purpose:
+            obj = obj.filter(purpose=int(purpose))
+        if label:
+            obj = obj.filter(label=label)
+        if obj:
+            obj = obj.order_by("-mark")[0]
+            error = ''
+        else:
+            error = 'find nothing'
+
+        return render(request, 'CPUNerd/match.html', {'obj': obj, 'error': error})
 
 
 class CpuDetailView(LoginRequiredMixin, View):

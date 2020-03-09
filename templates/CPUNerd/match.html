@@ -1,13 +1,72 @@
 {% extends 'base.html'%}
 {% load staticfiles %}
 {% block csstyle %}
-    <link href="{% static 'css/index.css' %}" rel="stylesheet">
+    <link href="{% static 'css/match.css' %}" rel="stylesheet">
 {%  endblock %}
 
 {%block content%}
     <div class="center-content">
+        <div class="match">
+            <h2>We pick the best CPU for you</h2>
+            <form action="{% url 'CPUNerd:match' %}" method="post">
+                <div class="form-group">
+                    <label for="purpose">Purpose</label>
+                    <select name="purpose" id="purpose" class="form-control">
+                        <option value="0">Entertainment</option>
+                        <option value="1">Office</option>
+                        <option value="2">Gaming and professional production</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="core">Core</label>
+                     <select name="core" id="core" class="form-control">
+                        <option value="0">4 core</option>
+                        <option value="1">6 core</option>
+                        <option value="2">8 core</option>
+                         <option value="4">10 core</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="label">label</label>
+                    <select name="label" id="label" class="form-control">
+                        <option value="i3">i3</option>
+                        <option value="i5">i5</option>
+                        <option value="i7">i7</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="min_price">min_price</label>
+                    <input type="text" class="form-control" id="min_price" placeholder="min_price" name="min_price">
+                </div>
+                <div class="form-group">
+                    <label for="max_price">max_price</label>
+                    <input type="text" class="form-control" id="max_price" placeholder="max_price" name="max_price">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="form-control" name="max_price"><span class="glyphicon glyphicon glyphicon-zoom-in"></span>search</button>
+                </div>
+                {% csrf_token %}
+            </form>
+        </div>
 
-        <h2>this is match page</h2>
+        <div class="result">
+            {% if error %}
+                <div>{{ error }}</div>
+            {% elif obj %}
+                <div>{{ obj.description }}</div>
+                <img src="{{ obj.image.url }}">
+                <div>
+                    <p style="font-size: 20px">purpose:{{ obj.get_purpose_display }}</p>
+                    <p style="font-size: 20px">cores:{{ obj.get_core_display }},frequency:{{ obj.frequency }} hz</p>
+                    <p style="font-size: 20px">label:{{ obj.label }},price:{{ obj.price }}</p>
+                    <p style="font-size: 20px">score:{{ obj.mark }}
+                    <button type="button" class="btn btn-default btn-lg" onclick="window.open('{% url 'CPUNerd:cpu_detail' obj.id %}','_self')"><span class="glyphicon glyphicon-plus"></span>enter detail</button>
+                </p>
+                </div>
+            {% endif %}
+        </div>
+
+
 
     </div>
 

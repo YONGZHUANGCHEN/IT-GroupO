@@ -11,8 +11,9 @@ class CpuModel(models.Model):
     category = models.IntegerField(choices=((0, 'AMD'), (1, 'Intel')))
     price = models.IntegerField()
     purpose = models.IntegerField(choices=((0, 'Entertainment'), (1, 'office'), (2, 'Gaming and professional production')))
-    core = models.IntegerField(choices=((0, 'four hz'), (1, 'six hz'), (2, 'eight hx'), (4, 'ten hx')))
+    core = models.IntegerField(choices=((0, 'four core'), (1, 'six core'), (2, 'eight core'), (4, 'ten core')))
     frequency = models.FloatField()
+    label = models.CharField(max_length=100, default='i3')
     update_time = models.DateTimeField(auto_now=True)
 
 
