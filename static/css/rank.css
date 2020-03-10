@@ -1,0 +1,141 @@
+.rankbg {
+    height: 420px;
+    overflow: hidden;
+    background: url('../i/rank.jpg') no-repeat 50% 0;
+}
+
+.invitebg {
+    background: url('../i/invite.jpg') no-repeat 50% 0;
+}
+
+.ranktitle {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #d1d1d1;
+    text-align: center;
+    font-size: 0;
+}
+
+.ranktitle a {
+    display: inline-block;
+    width: 135px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+.ranktitle a.on {
+    line-height: 78px;
+    border-bottom: 2px solid #0063ca;
+    color: #0063ca;
+}
+
+.rank-wrapper {
+    background: #fff;
+    margin-top: 30px;
+    padding: 30px 0 20px 0;
+}
+
+.rank-wrapper .rank-numberInfo {
+    padding: 30px 0 20px;
+}
+
+.rank-wrapper .rank-numberInfo span {
+    color: #666;
+    padding-left: 58px;
+}
+
+.rank-wrapper .rank-numberInfo a {
+    color: #0063ca;
+    padding-right: 22px;
+}
+
+.rank-wrapper .rank-show {
+    width: 1140px;
+    margin: 0 auto;
+    border-top: 1px solid #0063ca;
+    padding-bottom: 10px;
+}
+
+.rank-show .show-table {
+    width: 100%;
+    color: #666;
+    font-size: 16px;
+}
+
+.rank-show .show-table tr.head {
+    background: #e4f6ff;
+    height: 50px;
+    line-height: 50px;
+}
+
+.rank-show .show-table th {
+    color: #0063ca;
+}
+
+.rank-show .show-table td {
+    padding: 10px 0;
+}
+
+.show-table td.rank b {
+    display: inline-block;
+    width: 22px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #666666;
+    border-radius: 1px;
+    font-weight: 400;
+}
+
+.show-table td.rank .first {
+    background: #0063ca;
+    color: #fff;
+}
+
+.show-table td.rank .second {
+    background: #369cfe;
+    color: #fff;
+}
+
+.show-table td.rank .third {
+    background: #afe4ff;
+    color: #fff;
+}
+
+.rank-show .show-table .txtcenter {
+    text-align: center;
+}
+
+.show-table .user-td a {
+    display: inline-block;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.show-table .user-td a img {
+    width: 100%;
+}
+
+.show-table .user-td span {
+    padding-left: 25px;
+}
+
+.show-table .user-td span, .show-table .user-td a {
+    vertical-align: middle;
+}
+
+.mySelf-rankBox {
+    border: 1px solid #0063ca;
+    background: #fff;
+    margin-top: 34px;
+    padding: 19px 18px;
+    -moz-box-shadow: 0px 6px 10px 5px rgba(217, 217, 217, .8);
+    -ms-box-shadow: 0px 6px 10px 5px rgba(217, 217, 217, .8);
+    -webkit-box-shadow: 0px 6px 10px 5px rgba(217, 217, 217, .8);
+    box-shadow: 0px 6px 10px 5px rgba(217, 217, 217, .8);
+}

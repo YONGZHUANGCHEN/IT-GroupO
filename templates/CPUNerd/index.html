@@ -77,6 +77,10 @@
         </div>
 
         <div class="rank-list">
+            <div>
+                <span>Rank</span>
+                <span><a href="{% url 'CPUNerd:rank' %}">more>></a></span>
+            </div>
             <ol>
                 {% for item in obj %}
                 <li {% if forloop.counter0 < 2 %}class="top" {% endif %}>
@@ -84,7 +88,6 @@
                 </li>
                 {% endfor %}
             </ol>
-            <div class="clear"></div>
         </div>
 
     </div>

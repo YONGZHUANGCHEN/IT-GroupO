@@ -47,11 +47,11 @@ class CpuDetailView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         obj = CpuModel.objects.get(id=int(kwargs['id']))
         last_obj = next_obj = None
-        tem = CpuModel.objects.filter(id__lt=obj.id).values_list('id', 'content').order_by(
+        tem = CpuModel.objects.filter(id__lt=obj.id).values_list('id', 'description').order_by(
             "-id")
         if tem:
             last_obj = tem[0]
-        tem = CpuModel.objects.filter(id__gt=obj.id).values_list('id', 'content').order_by(
+        tem = CpuModel.objects.filter(id__gt=obj.id).values_list('id', 'description').order_by(
             "id")
         if tem:
             next_obj = tem[0]
@@ -59,6 +59,12 @@ class CpuDetailView(LoginRequiredMixin, View):
 
     def post(self, request):
         pass
+
+
+class RankView(LoginRequiredMixin, View):
+    def get(self, request):
+        cpu_obj_list = CpuModel.objects.all().order_by("-mark")
+        return render(request, 'CPUNerd/rank.html', {'obj': cpu_obj_list})
 
 
 class CommentView(LoginRequiredMixin, View):
