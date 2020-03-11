@@ -24,17 +24,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item {% if request.path == '/' %} active {% endif %}">
                     <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {% if request.path == '/cpunerd/rank/' %} active {% endif %}">
                     <a class="nav-link" href="{% url 'CPUNerd:rank' %}">Ranks</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown {% if request.path == '/cpunerd/category/' %} active {% endif %}">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">AMD</a>
-                        <a class="dropdown-item" href="#">Intel</a>
+                        <a class="dropdown-item" href="{% url 'CPUNerd:category' %}?category=0">AMD</a>
+                        <a class="dropdown-item" href="{% url 'CPUNerd:category' %}?category=1">Intel</a>
                     </div>
                 </li>
                 <li class="nav-item">

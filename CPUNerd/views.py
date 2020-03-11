@@ -73,3 +73,9 @@ class CommentView(LoginRequiredMixin, View):
         obj = CpuModel.objects.get(id=int(cpu_id))
         CommentModel.objects.create(user=request.user,cpu=obj,content=request.POST.get("remark", ""))
         return redirect(reverse('CPUNerd:cpu_detail', kwargs={'id': cpu_id}))
+
+
+class CategoryView(LoginRequiredMixin, View):
+    def get(self, request):
+
+        return render(request, 'CPUNerd/category.html')

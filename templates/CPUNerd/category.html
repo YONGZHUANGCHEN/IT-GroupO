@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% block csstyle %}
+    <link href="{% static 'css/category.css' %}" rel="stylesheet">
+{%  endblock %}
+
+{%block content%}
+
+
+    <div class="center-content">
+
+        <div class="list-item">
+
+            <div class="item">
+              <div class="layui-fluid">
+                <div class="layui-row">
+                  <div class="layui-col-xs12 layui-col-sm4 layui-col-md5">
+                    <div class="img"><img src="../res/img/sy_img1.jpg" alt=""></div>
+                  </div>
+                  <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
+                    <div class="item-cont">
+                      <h3>*************************<button class="layui-btn layui-btn-danger new-icon">new</button></h3>
+                      <h5>****</h5>
+                      <p>****************************************************************************************************</p>
+                      <a href="details.html" class="go-icon"></a>
+                    </div>
+                </div>
+                </div>
+               </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+{% endblock %}
