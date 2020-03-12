@@ -77,5 +77,6 @@ class CommentView(LoginRequiredMixin, View):
 
 class CategoryView(LoginRequiredMixin, View):
     def get(self, request):
-
-        return render(request, 'CPUNerd/category.html')
+        category = int(request.GET.get("category"))
+        cpu_obj_list = CpuModel.objects.filter(category=category)
+        return render(request, 'CPUNerd/category.html',{'cpu_obj_list': cpu_obj_list})

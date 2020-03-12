@@ -1,33 +1,13 @@
-.list-item .layui-fluid{padding:0;}
-.list-item .item{margin-bottom: 80px; overflow: hidden;}
-.list-item .item .img img{width: 100%;}
-.list-item .item .item-cont{padding-left: 100px;}
-.list-item .item .item-cont .go-icon{width: 33px; height: 11px; background: url(../img/jiantou.png) center center no-repeat; display: block; padding:10px 0; margin-top: 16px;}
-.list-item .item .item-cont h3{font-size: 24px; margin:20px 0;}
-.list-item .item .item-cont h3 .new-icon{width: 36px; height: 18px; line-height: 18px; text-align: center; padding:0; margin: -3px 0 0 10px;}
-.list-item .item .item-cont h5{font-size: 12px; color: #ff7f21; margin-bottom: 32px;}
-.list-item .item .item-cont p{line-height: 37px;
-   display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  /* autoprefixer: off */
-  -webkit-box-orient: vertical;
-  /* autoprefixer: on */
-}.list-item .layui-fluid{padding:0;}
-.list-item .item{margin-bottom: 80px; overflow: hidden;}
-.list-item .item .img img{width: 100%;}
-.list-item .item .item-cont{padding-left: 100px;}
-.list-item .item .item-cont .go-icon{width: 33px; height: 11px; background: url(../img/jiantou.png) center center no-repeat; display: block; padding:10px 0; margin-top: 16px;}
-.list-item .item .item-cont h3{font-size: 24px; margin:20px 0;}
-.list-item .item .item-cont h3 .new-icon{width: 36px; height: 18px; line-height: 18px; text-align: center; padding:0; margin: -3px 0 0 10px;}
-.list-item .item .item-cont h5{font-size: 12px; color: #ff7f21; margin-bottom: 32px;}
-.list-item .item .item-cont p{line-height: 37px;
-   display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  /* autoprefixer: off */
-  -webkit-box-orient: vertical;
-  /* autoprefixer: on */
+.r_box li { background: rgba(255,255,255,0.8); padding: 15px; overflow: hidden; color: #797b7c; margin-bottom: 20px }
+.r_box li h3 { font-size: 16px; line-height: 25px; text-shadow: #FFF 1px 1px 1px ;    color: #de4949;}
+.r_box li h3 a { color: #222 }
+.r_box li h3 a:hover { color: #000; text-decoration: underline }
+.r_box li img { float: right; clear: right; width: 100%; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; }
+.r_box li i { width: 150px; display: block; max-height: 100px; overflow: hidden; float: right; margin-left: 20px }
+.r_box li p { margin: 20px 0 0 0; line-height: 22px; overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 2; }
+.r_box li:hover img { transform: scale(1.05) }
+.r_box li:hover h3 a { color: #19585d; }
+div.r_box{
+    width: 60%;
+    margin: auto;
 }

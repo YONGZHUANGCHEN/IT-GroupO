@@ -9,29 +9,22 @@
 
     <div class="center-content">
 
-        <div class="list-item">
+    <div class="r_box">
+        {% for item in cpu_obj_list %}
+        <li>
+            <i>
+                <a href="{% url 'CPUNerd:cpu_detail' item.id %}" title="">
+                    <img src="{{ item.image.url }}" alt="个人博客，我为什么要用帝国cms？">
+                </a>
+            </i>
+            <h3>[ 顶 ] <a href="{% url 'CPUNerd:cpu_detail' item.id %}" target="_blank">{{ item.description }}</a></h3>
+            <p>{{ item.content | safe }}</p>
+        </li>
+        {%  endfor %}
 
-            <div class="item">
-              <div class="layui-fluid">
-                <div class="layui-row">
-                  <div class="layui-col-xs12 layui-col-sm4 layui-col-md5">
-                    <div class="img"><img src="../res/img/sy_img1.jpg" alt=""></div>
-                  </div>
-                  <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
-                    <div class="item-cont">
-                      <h3>*************************<button class="layui-btn layui-btn-danger new-icon">new</button></h3>
-                      <h5>****</h5>
-                      <p>****************************************************************************************************</p>
-                      <a href="details.html" class="go-icon"></a>
-                    </div>
-                </div>
-                </div>
-               </div>
-            </div>
-        </div>
 
     </div>
-
+    </div>
 
 
 {% endblock %}
