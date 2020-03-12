@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% load staticfiles %}
+{% load extratags %}
+{% block csstyle %}
+<link href="{% static 'css/cpu_detail.css' %}" rel="stylesheet">
+{%  endblock %}
+
+{%block content%}
+    <div class="center-content">
+
+        <div class="artical_content">
+            <div class="content_head">
+                <h3 class="article_title">{{obj.title}}</h3>
+                <p class="time">publish_time：{{obj.create_time | strftime}}&nbsp;</p>
+            </div>
+            <article>
+                {{obj.content | safe}}
+            </article>
+        </div>
+    </div>
+{%endblock%}

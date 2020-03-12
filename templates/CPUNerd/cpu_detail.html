@@ -11,7 +11,7 @@
         <div class="artical_content">
             <div class="content_head">
                 <h3 class="article_title">{{obj.description}}</h3>
-                <p class="time">发布时间：{{obj.update_time | strftime}}&nbsp;</p>
+                <p class="time">publish_time：{{obj.update_time | strftime}}&nbsp;</p>
             </div>
             <article>
                 {{obj.content | safe}}

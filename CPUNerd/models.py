@@ -24,6 +24,13 @@ class CommentModel(models.Model):
     create_time = models.DateTimeField(auto_now_add=True)
 
 
+class NewsModel(models.Model):
+    title = models.CharField(verbose_name='title', max_length=255)
+    image = models.ImageField(max_length=1000, upload_to='avatar', null=True, blank=True)
+    content = models.TextField(verbose_name="content")
+    create_time = models.DateTimeField(auto_now_add=True)
+
+
 
 
 

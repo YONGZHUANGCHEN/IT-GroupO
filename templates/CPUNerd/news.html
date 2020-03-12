@@ -10,14 +10,14 @@
     <div class="center-content">
 
     <div class="r_box">
-        {% for item in cpu_obj_list %}
+        {% for item in obj_list %}
         <li>
             <i>
-                <a href="{% url 'CPUNerd:cpu_detail' item.id %}" title="">
+                <a href="{% url 'CPUNerd:news-detail' item.id %}" title="">
                     <img src="{{ item.image.url }}" alt="">
                 </a>
             </i>
-            <h3>[ 顶 ] <a href="{% url 'CPUNerd:cpu_detail' item.id %}" target="_blank">{{ item.description }}</a></h3>
+            <h3>[ 顶 ] <a href="{% url 'CPUNerd:news-detail' item.id %}" target="_blank">{{ item.title }}</a></h3>
             <p>{{ item.content | safe }}</p>
         </li>
         {%  endfor %}

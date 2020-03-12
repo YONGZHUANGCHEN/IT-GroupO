@@ -1,6 +1,6 @@
 from django.shortcuts import render, reverse, redirect
 from django.http import HttpResponse
-from CPUNerd.models import CpuModel, CommentModel
+from CPUNerd.models import CpuModel, CommentModel, NewsModel
 from django.views import View
 from user_profile.views import LoginRequiredMixin
 
@@ -80,3 +80,15 @@ class CategoryView(LoginRequiredMixin, View):
         category = int(request.GET.get("category"))
         cpu_obj_list = CpuModel.objects.filter(category=category)
         return render(request, 'CPUNerd/category.html',{'cpu_obj_list': cpu_obj_list})
+
+
+class NewsView(LoginRequiredMixin, View):
+    def get(self, request):
+        obj_list = NewsModel.objects.all()
+        return render(request, 'CPUNerd/news.html',{'obj_list': obj_list})
+
+
+class NewsDetailView(LoginRequiredMixin, View):
+    def get(self, request, *args, **kwargs):
+        obj = NewsModel.objects.get(id=int(kwargs['id']))
+        return render(request, 'CPUNerd/news_detail.html', {'obj': obj})
