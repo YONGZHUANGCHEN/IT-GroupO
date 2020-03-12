@@ -89,3 +89,8 @@ p.comment-publish-time {
 div.comment-content > p{
   font-size: 16px;
 }
+
+article > img {
+    width: 60%;
+    margin-left: 20%;
+}
