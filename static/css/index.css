@@ -1,14 +1,16 @@
 div.center-content{
     background-color: dimgrey;
-    margin-top: -20px;
+     margin-top: -20px;
     height: 90%;
-    width: 86%;
-    padding: 3%;
+    width: 80%;
+    /*padding: 3%;
+
+     */
     overflow: hidden;
 }
 div#demo{
-    width: 60%;
-    height: 300px;
+    width: 100%;
+    height: 500px;
     float: left;
 }
 div.carousel-item {
@@ -16,16 +18,16 @@ div.carousel-item {
 }
 div.carousel-item > img{
     width: 100%;
-    height: 300px;
+    height: 500px;
+    border: 5px solid #423030
 }
 div#match {
-    float: right;
-    width: 30%;
-    height: 300px;
+    width: 100%;
 }
 div#match > img {
     width: 100%;
     height: 300px;
+    margin-top: 20px;
 }
 
 div.center-content > div:nth-child(1){
@@ -37,9 +39,14 @@ div.center-content > div:nth-child(2){
     width: 60%;
 }
 
+div.right{
+    float: right;
+    width: 30%;
+    padding-right: 20px ;
+}
 div.cpu-list{
-    float: left;
     display: inline-block;
+    padding-left: 20px ;
 }
 
 div.cpu-list > div.list-group > a.list-group-item {
@@ -53,8 +60,6 @@ div.cpu-list > div.list-group > a.list-group-item:hover{
 div.rank-list{
     margin-top: 20px;
     display: inline-block;
-    width: 30%;
-    float: right;
     border: solid 1px #ddd;
 }
 div.rank-list ol {

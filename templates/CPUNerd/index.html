@@ -41,9 +41,6 @@
                 <span class="carousel-control-next-icon"></span>
               </a>
             </div>
-            <div id="match" onclick="window.open('{% url 'CPUNerd:match' %}','_self')">
-                <img src="{% static 'img/match.png' %}">
-            </div>
         </div>
 
 
@@ -76,18 +73,24 @@
             </div>
         </div>
 
-        <div class="rank-list">
-            <div>
-                <span>Rank</span>
-                <span><a href="{% url 'CPUNerd:rank' %}">more>></a></span>
+        <div class="right">
+            <div id="match" onclick="window.open('{% url 'CPUNerd:match' %}','_self')">
+                    <img src="{% static 'img/match.png' %}">
             </div>
-            <ol>
-                {% for item in obj %}
-                <li {% if forloop.counter0 < 2 %}class="top" {% endif %}>
-                    <em>{{ forloop.counter }}</em><p><a href="{% url 'CPUNerd:cpu_detail' item.id %}" title="">{{ item.description }}</a></p><span class="num">{{ item.mark }}</span>
-                </li>
-                {% endfor %}
-            </ol>
+
+            <div class="rank-list">
+                <div>
+                    <span>Rank</span>
+                    <span><a href="{% url 'CPUNerd:rank' %}">more>></a></span>
+                </div>
+                <ol>
+                    {% for item in obj %}
+                    <li {% if forloop.counter0 < 2 %}class="top" {% endif %}>
+                        <em>{{ forloop.counter }}</em><p><a href="{% url 'CPUNerd:cpu_detail' item.id %}" title="">{{ item.description }}</a></p><span class="num">{{ item.mark }}</span>
+                    </li>
+                    {% endfor %}
+                </ol>
+            </div>
         </div>
 
     </div>
