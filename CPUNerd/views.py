@@ -9,7 +9,15 @@ from user_profile.views import LoginRequiredMixin
 
 def index(request):
     cpu_obj_list = CpuModel.objects.all().order_by("-mark")
-    return render(request, 'CPUNerd/index.html', {'obj': cpu_obj_list})
+    if request.method == 'POST':
+        search = request.POST.get("search")
+        cpu_obj_list2 =  CpuModel.objects.filter(description__contains=search).order_by("-mark")
+    else:
+        cpu_obj_list2 = cpu_obj_list
+
+
+
+    return render(request, 'CPUNerd/index.html', {'obj': cpu_obj_list, 'obj_list': cpu_obj_list2})
 
 
 class MatchView(LoginRequiredMixin, View):

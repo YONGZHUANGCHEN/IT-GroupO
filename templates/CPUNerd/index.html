@@ -62,7 +62,8 @@
         <div class="cpu-list">
             <div class="list-group">
                 <h1 style="background-color:white">Introduction of the editor selections</h1>
-                {% for item in obj %}
+
+                {% for item in obj_list %}
                   <a href="{% url 'CPUNerd:cpu_detail' item.id %}" class="list-group-item">
                       <div style="width: 60px;height: 60px;float: left">
                         <img src="{{ item.image.url }}" style="height:100%;width: 100%;" >
