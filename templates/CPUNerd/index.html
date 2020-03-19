@@ -7,11 +7,14 @@
 {%block content%}
     <div class="center-content">
         <div>
+            <h1 style="text-align: center; background-color:white">Top Five CPUs</h1>
             <div id="demo" class="carousel slide" data-ride="carousel">
               <ul class="carousel-indicators">
                 <li data-target="#demo" data-slide-to="0" class="active"></li>
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
               </ul>
               <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -32,6 +35,18 @@
                         <h3>{{ obj.2.description }}</h3>
                       </div>
                     </div>
+                        <div class="carousel-item">
+                      <img src="{{ obj.3.image.url }}">
+                      <div class="carousel-caption">
+                        <h3>{{ obj.3.description }}</h3>
+                      </div>
+                    </div>
+                        <div class="carousel-item">
+                      <img src="{{ obj.4.image.url }}">
+                      <div class="carousel-caption">
+                        <h3>{{ obj.4.description }}</h3>
+                      </div>
+                    </div>
 
               </div>
               <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -46,6 +61,7 @@
 
         <div class="cpu-list">
             <div class="list-group">
+                <h1 style="background-color:white">Introduction of the editor selections</h1>
                 {% for item in obj %}
                   <a href="{% url 'CPUNerd:cpu_detail' item.id %}" class="list-group-item">
                       <div style="width: 60px;height: 60px;float: left">
@@ -74,8 +90,8 @@
         </div>
 
         <div class="right">
-            <div id="match" onclick="window.open('{% url 'CPUNerd:match' %}','_self')">
-                    <img src="{% static 'img/match.png' %}">
+            <div  id="match" onclick="window.open('{% url 'CPUNerd:match' %}','_self')"  style="cursor:pointer">
+                    <img src="{% static 'img/match1.png' %}" onmouseover="this.src='{% static 'img/match2.png' %}'" onmouseout="this.src='{% static 'img/match1.png' %}'">
             </div>
 
             <div class="rank-list">
@@ -97,3 +113,4 @@
 
 
 {%endblock%}
+

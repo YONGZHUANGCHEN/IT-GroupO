@@ -24,13 +24,13 @@
             <div class="send-comment">
                 <form method="post" enctype="multipart/form-data" action="{% url 'CPUNerd:comment' %}?id={{ obj.id }}">
                     <textarea type="text" name="remark" placeholder="say something?"></textarea>
-                    <button type="submit">发布</button>
+                    <button type="submit">submit</button>
                     {% csrf_token %}
                 </form>
             </div>
 
             <div class="comment">
-                <p>热门评论({{obj.comment_list.length}})</p>
+                <p>Popular Comments({{obj.comment_list.length}})</p>
                 {% for item in obj.comment_list.all %}
                 <div class="comment-item">
                     <image src="{{item.user.image.url}}"></image>
