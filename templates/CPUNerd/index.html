@@ -13,27 +13,25 @@
                 <li data-target="#demo" data-slide-to="1"></li>
                 <li data-target="#demo" data-slide-to="2"></li>
               </ul>
-              <div class="carousel-inner">
+             <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src="{{ obj.0.image.url }}">
+                      <img src="{% static 'img/amd3.png' %}">
                       <div class="carousel-caption">
-                        <h3>{{ obj.0.description }}</h3>
+                        <h3>AMD releases third-generation Ryzen processors</h3>
                       </div>
                     </div>
                        <div class="carousel-item">
-                      <img src="{{ obj.1.image.url }}">
+                      <img src="{% static 'img/amd333.jpg' %}">
                       <div class="carousel-caption">
-                        <h3>{{ obj.1.description }}</h3>
+                        <h3>AMD Ryzen 7 3700X Gen3 8 Core AM4 CPU</h3>
                       </div>
                     </div>
                        <div class="carousel-item">
-                      <img src="{{ obj.2.image.url }}">
+                      <img src="{% static 'img/intel10th.jpg' %}">
                       <div class="carousel-caption">
-                        <h3>{{ obj.2.description }}</h3>
+                        <h3> Intel Core 10th Generation CPUs</h3>
                       </div>
                     </div>
-
-              </div>
               <a class="carousel-control-prev" href="#demo" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
               </a>
