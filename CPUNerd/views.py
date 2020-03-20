@@ -12,6 +12,7 @@ def index(request):
     return render(request, 'CPUNerd/index.html', {'obj': cpu_obj_list})
 
 
+
 class MatchView(LoginRequiredMixin, View):
     def get(self, request):
 

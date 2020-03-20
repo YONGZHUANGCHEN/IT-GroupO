@@ -17,7 +17,7 @@
                     <img src="{{ item.image.url }}" alt="">
                 </a>
             </i>
-            <h3>[ 顶 ] <a href="{% url 'CPUNerd:cpu_detail' item.id %}" target="_blank">{{ item.description }}</a></h3>
+            <h3>[ Hot ] <a href="{% url 'CPUNerd:cpu_detail' item.id %}" target="_blank">{{ item.description }}</a></h3>
             <p>{{ item.content | safe }}</p>
         </li>
         {%  endfor %}
