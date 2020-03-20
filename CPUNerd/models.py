@@ -7,6 +7,7 @@ class CpuModel(models.Model):
     description = models.CharField(max_length=255)
     content = models.TextField()
     image = models.ImageField(max_length=1000, upload_to='avatar', null=True, blank=True)
+    indexIMG = models.ImageField(max_length=1000, upload_to='indexIMG/', null=True, blank=True)
     mark = models.IntegerField()
     category = models.IntegerField(choices=((0, 'AMD'), (1, 'Intel')))
     price = models.IntegerField()
