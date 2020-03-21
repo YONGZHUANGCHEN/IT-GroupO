@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85abbae9-851c-45c6-876b-a5aa6dc063c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CPUNerd/migrations/0006_cpumodel_indeximg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPUNerd/migrations/0007_auto_20200320_1450.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPUNerd_project/populate_img.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/2019-08-01-image-3_qA634yk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/2020-02-19-image_1NZuNuP.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/2064553-n4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/71Q5sdPHD-L._AC_SL1500__7rzAIt2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/AMD-Ryzen-3-APU-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/i3index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/i3index_baAu1Ob.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/i3index_vKifIyL.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/i5index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/i5index_YEYV57U.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/i5index_qZ5R8Hh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/i7index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/i7index_pv6rYQT.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/i7index_sS01Cfi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen-3600-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen3index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen3index_QmUouVh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen3index_V59Qlpu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen5 index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen5_index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen5_index_zbpIVLg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen7 index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen7_index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/avatar/ryzen7_index_ExHWoHo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/match1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/match2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPUNerd/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/CPUNerd/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPUNerd/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CPUNerd/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/match.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CPUNerd/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CPUNerd/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CPUNerd/cpu_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CPUNerd/cpu_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/CPUNerd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CPUNerd/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CPUNerd/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CPUNerd/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CPUNerd/news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CPUNerd/news_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +94,7 @@
       <workItem from="1583455345735" duration="3270000" />
       <workItem from="1583517091480" duration="2498000" />
       <workItem from="1584719295758" duration="199000" />
-      <workItem from="1584719499301" duration="3316000" />
+      <workItem from="1584719499301" duration="4004000" />
     </task>
     <servers />
   </component>
