@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'bootstrap4',
     'CPUNerd.apps.CpunerdConfig',
     'user_profile.apps.UserProfileConfig',
     'user_profile.templatetags',
@@ -136,3 +138,9 @@ AUTHENTICATION_BACKENDS = ('user_profile.views.CustomBackend',)
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+
+
+TEMPUS_DOMINUS_LOCALIZE = True
+TEMPUS_DOMINUS_INCLUDE_ASSETS = False

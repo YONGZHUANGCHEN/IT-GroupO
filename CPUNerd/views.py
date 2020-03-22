@@ -93,3 +93,12 @@ class NewsDetailView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         obj = NewsModel.objects.get(id=int(kwargs['id']))
         return render(request, 'CPUNerd/news_detail.html', {'obj': obj})
+
+
+def search(request):
+    s = request.GET.get('s', '')
+    if 'amd' in s.lower():
+        return redirect('/cpunerd/category/?category=0')
+    elif 'intel' in s.lower():
+        return redirect('/cpunerd/category/?category=1')
+    return redirect('/')

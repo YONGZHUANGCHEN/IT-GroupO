@@ -1,21 +1,5 @@
-<!DOCTYPE html>
-{% load staticfiles %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CPUNerd</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    {% block csstyle %}
-    {%  endblock %}
-</head>
-<body>
+{% extends '_layout.html' %}
+{% block nav %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">CPUNerd</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,48 +9,44 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item {% if request.path == '/' %} active {% endif %}">
-                    <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'index' %}"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item {% if request.path == '/cpunerd/rank/' %} active {% endif %}">
-                    <a class="nav-link" href="{% url 'CPUNerd:rank' %}">Ranks</a>
+                    <a class="nav-link" href="{% url 'CPUNerd:rank' %}"><i class="fas fa-sort-numeric-down"></i> Ranks</a>
                 </li>
                 <li class="nav-item dropdown {% if request.path == '/cpunerd/category/' %} active {% endif %}">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-microchip"></i> Categories</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{% url 'CPUNerd:category' %}?category=0">AMD</a>
                         <a class="dropdown-item" href="{% url 'CPUNerd:category' %}?category=1">Intel</a>
                     </div>
                 </li>
                 <li class="nav-item {% if request.path == '/cpunerd/news/' %} active {% endif %}">
-                    <a class="nav-link " href="{% url 'CPUNerd:news' %}">newreleased</a>
+                    <a class="nav-link " href="{% url 'CPUNerd:news' %}"><i class="fas fa-rss"></i> New Released</a>
                 </li>
             </ul>
-            <ul class="navbar-nav mr-auto">
-              {% if request.user.is_authenticated %}
+
+            <ul class="navbar-nav mr-auto float-right">
+            <form class="form-inline mt-2 mt-md-0" method="get" action="{% url 'CPUNerd:search' %}">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="s" required=""><div class="input-group-append"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button></div>
+            </form>
+            {% if user.is_authenticated %}
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="user-profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      {{ request.user }}
+                        <img src="{{ user.image.url }}" alt="" class="img-fluid rounded-circle" width="30">{{ request.user.username }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="user-profile">
-                      <a class="dropdown-item" href="{% url 'user_profile:logout' %}">logout</a>
-                      <a class="dropdown-item" href="{% url 'user_profile:profile' %}">detail</a>
+                      <a class="dropdown-item" href="{% url 'user_profile:profile' %}"><i class="fas fa-user-edit"></i> Profile</a>
+                        <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="{% url 'user_profile:logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a>
                     </div>
                   </li>
               {% else %}
-              <li class="nav-item"><a class="nav-link" href="{% url 'user_profile:register' %}">sign up</a></li>
-              <li class="nav-item"><a class="nav-link" href="{% url 'user_profile:login' %}">login</a></li>
+                <li class="nav-item"><span class="navbar-text">Welcome</span></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'user_profile:register' %}"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'user_profile:login' %}"><i class="fas fa-sign-in-alt"></i> login</a></li>
               {% endif %}
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
-    {% block content %}
-    {% endblock %}
-</body>
-
-{% block js %}
 {% endblock %}
-</html>
