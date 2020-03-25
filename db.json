@@ -1,0 +1,710 @@
+[
+{
+    "model": "CPUNerd.cpumodel",
+    "pk": 1,
+    "fields": {
+        "description": "AMD Ryzen 5 3600 Gen3 6 Core AM4 CPU",
+        "content": "<img src=\"/static/img/ryzen5.jpeg\"></img>\r\n\r\n<p>First of all, we can see that the R5 3600 still uses 6 cores and 12 threads, and its L3 cache has been increased to an astonishing 32MB, which is double the previous generation R5 2600! The total cache has reached 36MB, which definitely improves the CPU performance.</p>\r\n<img src=\"/static/img/cpu_amd_i5.jpg\"></img>\r\n\r\n<p>The R5 3600 has a base frequency of 3.6GHz and a dynamic acceleration frequency of 4.2GHz. Compared with the previous generation, it has improved by 0.2GHz and 0.3GHz, respectively. Thanks to the improvement of the production process, the increase in frequency will definitely have a better performance on the improvement of CPU performance.</p>\r\n\r\n<p>Below the CPU frequency is the motherboard socket, which is still the familiar Socket AM4. That is to say, you can perfectly support the new 3rd generation Ryzen series CPU without changing the motherboard.</p>\r\n\r\n<p>7nm process. AMD went directly from 12nm, stride meteor directly to 7nm. You know, Intel's 10nm is still difficult to produce, it is said that Intel's 14nm process will be used in 2021. It is enough to prove how powerful the latest AMD 3 generation Ryzen series processors are!</p>\r\n\r\n<p>The price of the AMD Ryzen R5 3600 is 156 pounds. In terms of performance, according to evaluation, the multi-core performance of the R5 3600 is the same as the previous generation R7 2700X, and the single-core performance is better than the latter. On the other hand, the performance can be directly benchmarked to Intel's ninth-generation Core i7 processor, but the price is similar to the Core i5, and it does not need to be equipped with a new motherboard, which can be said to be a huge discount for users.</p>\r\n<p>This CPU can not only complete daily office, graphics, rendering processing, but also easily handle large games.</p>\r\n\r\n<p><a href=\"https://www.amazon.co.uk/AMD-Ryzen-3200G-Processor-Graphics/dp/B07STGGQ18/ref=sr_1_2?crid=2BWK3KMN06DAY&keywords=ryzen%2B3200g&qid=1584034094&sprefix=ryzen%2B3%2Caps%2C152&sr=8-2&th=1\">Amazon link click here</a></p>",
+        "image": "avatar/1C2A0A222A131DD4362CA96EDCD5D3DA.jpg",
+        "mark": 20139,
+        "category": 0,
+        "price": 154,
+        "purpose": 0,
+        "core": 1,
+        "frequency": 3.6,
+        "label": "ryzen5",
+        "update_time": "2020-03-20T16:37:17.763Z"
+    }
+},
+{
+    "model": "CPUNerd.cpumodel",
+    "pk": 2,
+    "fields": {
+        "description": "AMD Ryzen 3 3200G VEGA Graphics AM4 CPU",
+        "content": "<img src=\"/static/img/r33.jpg\"></img>\r\n\r\n<p>Ryzen 3 3200G integrates Vgea 8 core display, the base frequency is 3.6GHz, and the maximum core frequency can reach 4.0GHz, which is 0.3GHz higher than its predecessor Ryzen 3 2200G. In addition, the Ryzen 3 3200G integrated Vgea 8 core display also has a higher frequency than the Vgea 8 on the Ryzen 3 2200G, from 1100MHz to 1250MHz, and the boxed Ryzen 3 3200G comes with a Wraith Stealth radiator rated at 65W.</p>\r\n\r\n<p>3200G uses 4 cores and 4 threads, the basic frequency is 3.60 GHz, and the acceleration frequency is 4.00 GHz. Compared with the 3.5GHz basic frequency and 3.7GHz acceleration frequency of the Ryzen 3 2200G, the improvement is large, reaching 0.3GHz. In addition to the frequency parameters, this new APU uses a 12-nanometer process and the architecture has also been upgraded to Zen +.</p>\r\n\r\n<p>The price of this processor is only 78 pounds. With the same price as the i3-9100F, the performance is similar, but because the Ryzen 3 3200G integrates the Vgea 8-core display, users can use it without using a graphics card. Can be used normally, saving a lot of overhead. This processor, as well as can easily deal with daily office and video entertainment.</p>\r\n\r\n<p><a href=\"https://www.amazon.co.uk/AMD-Ryzen-3200G-Processor-Graphics/dp/B07STGHZK8/ref=sr_1_2?crid=2BWK3KMN06DAY&keywords=ryzen+3200g&qid=1584034094&sprefix=ryzen+3%2Caps%2C152&sr=8-2\">Amazon link click here</a></p>",
+        "image": "avatar/4C9EE4F68E76DB1C0CCF5969A005BA1C.jpg",
+        "mark": 8067,
+        "category": 0,
+        "price": 77,
+        "purpose": 1,
+        "core": 0,
+        "frequency": 3.6,
+        "label": "ryzen3",
+        "update_time": "2020-03-20T16:43:36.624Z"
+    }
+},
+{
+    "model": "CPUNerd.cpumodel",
+    "pk": 3,
+    "fields": {
+        "description": "Intel Core i7 9700K Unlocked 9th Gen Desktop Processor",
+        "content": "<img src=\"/static/img/i79700.jpg\"></img>\r\n\r\n<p>Intel Core i7-9700K for gaming enthusiasts. At present, the highest-end Core i7 processor is the ninth-generation Intel Core i7-9700K. This processor has a 3.6GHz CPU frequency and a maximum core frequency of 4.9GHz, which is only 5.0GHz after the i9-9900K and i7-9700K. The number of core threads is 8 cores and 8 threads, which has two more physical cores than the previous generation i7, and is more focused on the game field. The Intel Core i7-9700K processor is obviously more suitable for gaming, and even comparable to the 8-core 16-thread 5.0GHz i9-9900K in gaming performance. And since the number of i7-9700K cores has reached 8 physical cores, it means that games and most applications can be fully satisfied.</p>\r\n<p>The 9th-generation Core that was launched this time also used brazing for heat dissipation, and the Intel Core i7-9700K is no exception. The brazing heat dissipation efficiency is significantly higher than that of silicone grease. This is a liquid metal heat dissipation material with very high heat dissipation efficiency. It can easily withstand the pressure of high-load applications and ensure that the Intel Core i7-9700K can run for a long time. At super high Turbo frequency. In terms of price, the price of this processor is 339 pounds. It also needs to be equipped with high-quality power supply, motherboard and heat dissipation. Many people cannot afford it. If you are not a computer enthusiast or need professional graphics rendering, this processor is not recommended.</p>\r\n\r\n<p><a href=\"https://www.amazon.co.uk/Intel-BX80684I79700K-I7-9700K-3-60GHZ-SKT1151-Noir/dp/B07HHN6KBZ/ref=sr_1_1?keywords=i7+9700k&qid=1584034074&sr=8-1\">Amazon link click here</a></p>",
+        "image": "avatar/i79700.jpg",
+        "mark": 17199,
+        "category": 1,
+        "price": 339,
+        "purpose": 2,
+        "core": 1,
+        "frequency": 3.6,
+        "label": "i7",
+        "update_time": "2020-03-20T16:44:46.108Z"
+    }
+},
+{
+    "model": "CPUNerd.cpumodel",
+    "pk": 4,
+    "fields": {
+        "description": "Intel Core i5 9400F 9th Gen 6-Core Desktop Processor",
+        "content": "<img src=\"/static/img/i5.jpeg\"></img>\r\n\r\n<p>The Core i5-9400F processor uses a 6-core 6-thread design, a base frequency of 2.9GHz, an acceleration frequency of 4.1GHz, a full-core frequency of up to 3.9GHz, and a three-level cache of 9MB. There is no difference in parameters from the i5-9400, but because the nuclear display is removed, the power consumption of the i5-9400F will be lower under high load conditions.</p>\r\n\r\n<p>In terms of power consumption, although Intel's 14nm process has been used by various players, in fact, the power consumption of the i5-9400F is very low, and the standby power consumption of the entire machine is only 41W. When using the AIDA64 FPU baking machine, the overall power consumption is also Only 110W, even if the CPU and GPU are fully loaded at the same time, the overall power consumption is only 210W.</p>\r\n\r\n<p>If you are just a pure gamer and do not want to toss in pursuit of stability. In addition to games, the computer is only used to access the Internet and work, then the Core i5-9400F will be a more economical choice.</p>\r\n \r\n<p>The price of this processor is only 134 pounds, which is less than half of the mid-to-high-end processors. If you consider the high-end processors require expensive extra costs in terms of power, heat dissipation and motherboard, the cost-effective advantage of i5-9400F will more obvious. This CPU can not only satisfy users' daily office and entertainment, but also have a good performance in large games.</p>\r\n\r\n<p><a href=\"https://www.amazon.co.uk/Intel-BX80684I59400F-I5-9400F-2-90GHZ-SKT1151/dp/B07MRCGQQ4/ref=sr_1_1?crid=2HK04ZN0MYN8K&keywords=i5+9400f&qid=1584034053&sprefix=i5+9400%2Caps%2C148&sr=8-1\">Amazon link click here</a></p>",
+        "image": "avatar/6598FA7042CA483BE681455E0C1178BA.jpg",
+        "mark": 12152,
+        "category": 1,
+        "price": 139,
+        "purpose": 0,
+        "core": 1,
+        "frequency": 2.9,
+        "label": "i5",
+        "update_time": "2020-03-20T16:35:01.469Z"
+    }
+},
+{
+    "model": "CPUNerd.cpumodel",
+    "pk": 5,
+    "fields": {
+        "description": "Intel Core i3 9100F 9th Gen Desktop Processor",
+        "content": "<img src=\"/static/img/i3.jpeg\"></img>\r\n\r\n<p>The new ninth-generation i3-9100F uses 4 cores, 4 threads, and no built-in core display. The default main frequency is 3.6GHz and the dynamic acceleration frequency is 4.2GHz. The capacity of L2 cache and L3 cache is 1M and 6M respectively. It supports a maximum capacity of 64GB, a specification of DDR-2400MHz, and a design power of 65W.</p>\r\n\r\n<p>In terms of architecture and manufacturing process, the i3-9100F is consistent with the ninth-generation Core series processors. It is also the Ice Lake architecture and 14nm process, and it continues the single-core performance advantage and software optimization advantage of Intel processors.</p>\r\n\r\n<p>Many novices' understandings of CPU performance are based on the size of i3, i5, and i7. As everyone knows, Intel has made stride upgrades to the specifications of its products since the eighth generation of Core. The existing eighth and ninth generation i3 specifications and performance are even more than the seventh and previous i5. Although the i3-9100F does not have many cores and threads, there is no compromise in architecture and clock frequency. For most ordinary users who do not do game live streaming and heavy video rendering, it is just right. The price is only 66 pounds, which is a suitable choice for most users. This processor can easily cope with daily office entertainment. If there is a game demand, it can also easily cope with most large games after matching the graphics card.</p>\r\n<p><a href=\"https://www.amazon.co.uk/Intel-i3-9100F-Desktop-Processor-Graphics/dp/B07R7Q3JZH/ref=sr_1_2?keywords=i3+9100f&qid=1584034030&sr=8-2\">Amazon link click here</a></p>",
+        "image": "avatar/DC5FE6F3D8E56D540DF9BA52AE366D4B.jpg",
+        "mark": 9090,
+        "category": 1,
+        "price": 66,
+        "purpose": 1,
+        "core": 0,
+        "frequency": 3.6,
+        "label": "i3",
+        "update_time": "2020-03-20T16:33:44.044Z"
+    }
+},
+{
+    "model": "CPUNerd.cpumodel",
+    "pk": 6,
+    "fields": {
+        "description": "AMD Ryzen 7 3700X Gen3 8 Core AM4 CPU",
+        "content": "<img src=\"/static/img/r7.jpg\"></img>\r\n\r\n<p>First, we can see that the R7 3700X still uses 8 cores and 16 threads, and its third-level cache has actually increased to an amazing 32MB, and the total cache has reached 36MB. This improves the CPU performance. The power consumption is only 65W.</p>\r\n\r\n<p>The base frequency of R7 3700X is 3.6GHz, and the dynamic acceleration frequency can reach 4.4GHz. Compared with the previous generation's 3.7GHZ and 4.35HZ, the improvement is not obvious. Thanks to the improvement of the manufacturing process, the power consumption is 105W Reduced to 65W.</p>\r\n\r\n<p>Below the CPU frequency is the motherboard socket, which is still the familiar Socket AM4. It can perfectly support the new 3 generation Ryzen series CPU without changing the motherboard. In the 7nm process, AMD directly went from 12nm, a large step meteor to 7nm.</p>\r\n\r\n<p>In terms of performance, AMD \u2019s new processor performed very well this time. Although the Ryzen 7 3700X is benchmarked against the i7-9700K, its overall score not only exceeds the i7-9700K, but also approaches the performance of the i9-9900K</p>\r\n\r\n<p>The price of the AMD Ryzen R7 3700X is 265 pounds. In terms of performance, according to evaluation, the R7 3700X's multi-core performance and single-core performance are better than the previous generation products. On the other hand, the performance can be directly benchmarked to Intel's ninth-generation Core i9 processor, but the price is very favorable, and without the need for a new motherboard, it can be said that it is a huge discount for users. It is a good choice for players who have a limited budget and want to pursue high performance, complete graphics rendering and large games.</p>\r\n<p><a href=\"https://www.amazon.co.uk/AMD-Ryzen-3200G-Processor-Graphics/dp/B07SXMZLPK/ref=sr_1_2?crid=2BWK3KMN06DAY&keywords=ryzen%2B3200g&qid=1584034094&sprefix=ryzen%2B3%2Caps%2C152&sr=8-2&th=1\">Amazon link click here</a></p>",
+        "image": "avatar/A9D1C7DE8EFC92C5F91937DEBB04B64F.jpg",
+        "mark": 23984,
+        "category": 0,
+        "price": 259,
+        "purpose": 2,
+        "core": 2,
+        "frequency": 3.7,
+        "label": "ryzen7",
+        "update_time": "2020-03-20T16:43:01.325Z"
+    }
+},
+{
+    "model": "CPUNerd.newsmodel",
+    "pk": 1,
+    "fields": {
+        "title": "New Intel Core 10th Generation CPUs coming soon",
+        "image": "avatar/A8E40F0FC66D41F0A3305BB17EC07F5D.jpg",
+        "content": "<img src=\"/static/img/n1_1.jpg\"></img>\r\n<p>Intel has also launched new Core series logos, including Core i7, Core i5, Core i3, which are completely different from the past, and have become square and completely flat. The background has been changed to neatly arranged small squares and black and white gradients. Transition, including Intel LOGO. Since the 65nm Merom first-generation Core in 2006, each major upgrade of Intel Core will bring a new image logo, and the style will gradually transition from early three-dimensional and round to flat and sharp, but the classic blue tone is cancelled and the black and white tone is changed the first time.</p>\r\n<img src=\"/static/img/n1_2.jpg\"></img>\r\n\r\n\r\n<p>It is reported that Intel's 10th-generation desktop processors are scheduled to be released next month. Before that, only the specifications of some 10th-generation processors had flowed out on the network. Recently, the information of the 10th-generation processors without a nuclear display was also leaked. In this way, 10 The information about the desktop CPU generation has basically been leaked. From the relevant information, there are currently known 4 i9 processors, 4 i7 processors, 6 i5 processors and 3 i3 processors.</p>\r\n<p>The suffix with the letter \"F\" stands for without a nuclear display. There are 6 types of such CPUs, including 2 i9 processors, 2 i7 processors, and 2 i5 processors. From the specifications, the \"F\" The specifications of the CPU without the \"F\" are the same, but the price is definitely cheaper with the \"F\". The i3 does not have the information of the \"F\" processor yet, but considering the existence of the previous i3-9100F , This generation of i3 should also have similar products.</p>\r\n\r\n<p>The shortcomings of the 10th generation CPU are mainly that it continues to use the 14nm process, and its performance in terms of energy consumption is not as good as that of rival AMD. It is said that its highest-end i9-10900K consumes more than 300W, and it uses the new LGA 1200 interface, which requires the latest 400 series. Chipset motherboard, so old users can't upgrade smoothly, which will increase the upgrade cost of users, which is not as good as AMD.</p>\r\n\r\n<p>According to the price information circulated on the Internet, the price of the 10th generation processor will not increase significantly compared to the 9th generation, and will basically remain at the same level. Combined with the current advantages of AMD, the reliability of the news is still very high However, the price of the new 400 series motherboards may be more expensive than the previous generation motherboards at the initial stage of the listing, so the installation cost will still be higher than the 9th generation. However, these are not yet determined. The specific news will not be determined until it is released, so users who want to assemble a new machine must continue to wait.</p>",
+        "create_time": "2020-03-12T17:05:23.472Z"
+    }
+},
+{
+    "model": "CPUNerd.newsmodel",
+    "pk": 2,
+    "fields": {
+        "title": "AMD releases third-generation Ryzen processors, outperforming Intel",
+        "image": "avatar/CA424BA6E1F0830119BB54AF43355B88.jpg",
+        "content": "<img src=\"/static/img/n2_1.jpg\">\r\n<p>On May 27, 2019, AMD officially released its third-generation Ryzen processor product at the Taipei Computer Show. See what excels at this third-generation Ryzen.</p>\r\n\r\n<p>The third generation of Ryzen adopts the third-generation Ryzen processor of the new Zen 2 architecture. The IPC has increased by about 15%, the cache has been doubled directly, and the floating-point computing performance has been doubled. The entire system also uses TSMC. The 7nm FinFET process is the world's first 7nm CPU.</p>\r\n<img src=\"/static/img/n2_2.jpg\">\r\n\r\n\r\n\r\n<p>The main product is the R7 3700X. It has 8 cores and 16 threads, the base frequency is 3.6GHz, the maximum boost frequency is 4.4GHz, and it has 36MB of total cache. While benchmarking the I7-9700K, the power consumption is only exaggerated. 65W TDP, it seems that TSMC's 7nm FinFET process has greatly improved.</p>\r\n<img src=\"/static/img/n2_3.jpg\">\r\n\r\n\r\n\r\n<p>Then came the R7 3800X. Like the R7 3700X, it also has 8 cores and 16 threads. The basic master rate is 3.9GHz, the automatic boost frequency (Boost) is 4.5GHz, 36MB total cache, and the power consumption comes to 105W TDP. The benchmark product For Intel's i9-9900K.</p>\r\n<img src=\"/static/img/n2_4.jpg\">\r\n\r\n\r\n<p>The last appearance is the third-generation Ryzen processor's high-end product R9 3900X, which has a powerful 12-core 24 threads, the basic frequency is 3.8GHz, and the automatic boost (Boost) is 4.6GHz. The cache and power consumption are only 105W TDP, which can be said to exceed the benchmark Intel i9-9920X.</p>",
+        "create_time": "2020-03-12T17:07:29.757Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 4,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 4,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 4,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 5,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 5,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 5,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 6,
+        "codename": "add_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 6,
+        "codename": "change_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 6,
+        "codename": "delete_userprofile"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can add cpu model",
+        "content_type": 7,
+        "codename": "add_cpumodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can change cpu model",
+        "content_type": 7,
+        "codename": "change_cpumodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can delete cpu model",
+        "content_type": 7,
+        "codename": "delete_cpumodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can add comment model",
+        "content_type": 8,
+        "codename": "add_commentmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can change comment model",
+        "content_type": 8,
+        "codename": "change_commentmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can delete comment model",
+        "content_type": 8,
+        "codename": "delete_commentmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add news model",
+        "content_type": 9,
+        "codename": "add_newsmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change news model",
+        "content_type": 9,
+        "codename": "change_newsmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete news model",
+        "content_type": 9,
+        "codename": "delete_newsmodel"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can add association",
+        "content_type": 10,
+        "codename": "add_association"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can change association",
+        "content_type": 10,
+        "codename": "change_association"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can delete association",
+        "content_type": 10,
+        "codename": "delete_association"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can add code",
+        "content_type": 11,
+        "codename": "add_code"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can change code",
+        "content_type": 11,
+        "codename": "change_code"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can delete code",
+        "content_type": 11,
+        "codename": "delete_code"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can add nonce",
+        "content_type": 12,
+        "codename": "add_nonce"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can change nonce",
+        "content_type": 12,
+        "codename": "change_nonce"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can delete nonce",
+        "content_type": 12,
+        "codename": "delete_nonce"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add user social auth",
+        "content_type": 13,
+        "codename": "add_usersocialauth"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change user social auth",
+        "content_type": 13,
+        "codename": "change_usersocialauth"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete user social auth",
+        "content_type": 13,
+        "codename": "delete_usersocialauth"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can add partial",
+        "content_type": 14,
+        "codename": "add_partial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can change partial",
+        "content_type": 14,
+        "codename": "change_partial"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can delete partial",
+        "content_type": 14,
+        "codename": "delete_partial"
+    }
+},
+{
+    "model": "user_profile.userprofile",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$ZfgPZMmv2cZP$C321DOlssrMAQx/tJldXoXsfGCpnSSquV3Dw71PSPO8=",
+        "last_login": "2020-03-07T17:06:58.547Z",
+        "is_superuser": false,
+        "username": "admin",
+        "first_name": "admin",
+        "last_name": "admin",
+        "email": "admin@qq.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-03-07T14:53:46.885Z",
+        "sex": 0,
+        "phone": null,
+        "address": null,
+        "interest": null,
+        "image": "avatar/default_h8H8ens_bt3aAxg_gLpbI2M_U506WTH_ACRad0y_H0kAGNe.jpg",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user_profile.userprofile",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$6vTbzdEj7Wyt$y5DjRrHWNK6yxAbcLHCqV1hKbK6oPhRVupYvJvuXKkw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "admin2",
+        "first_name": "adadmin2",
+        "last_name": "admin2",
+        "email": "admin2@qq.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-03-07T14:55:41.406Z",
+        "sex": 0,
+        "phone": null,
+        "address": null,
+        "interest": null,
+        "image": "avatar/default_h8H8ens_bt3aAxg_gLpbI2M_U506WTH_ACRad0y_H0kAGNe.jpg",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user_profile.userprofile",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$rY9uUENGHpt9$A43ALtFSLYN64RfRp3yV9a7Doh4Pte3WPhhrAUUyoF0=",
+        "last_login": "2020-03-07T15:20:06.148Z",
+        "is_superuser": false,
+        "username": "admin3",
+        "first_name": "admin3",
+        "last_name": "admin3",
+        "email": "admin3@qq.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-03-07T15:03:12.346Z",
+        "sex": 0,
+        "phone": null,
+        "address": null,
+        "interest": null,
+        "image": "avatar/default_h8H8ens_bt3aAxg_gLpbI2M_U506WTH_ACRad0y_mIKiEY9.jpg",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user_profile.userprofile",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$gkp3ZO3rPNy9$8cjfF6BgaLmT3GvKcjKCrmCkegwQOLiw0cCAirw3vLs=",
+        "last_login": "2020-03-22T04:20:29.556Z",
+        "is_superuser": true,
+        "username": "niuniuc",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@qq.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-03-08T17:02:00.808Z",
+        "sex": 0,
+        "phone": null,
+        "address": null,
+        "interest": null,
+        "image": "avatar/default_h8H8ens_bt3aAxg_gLpbI2M_U506WTH_ACRad0y_H0kAGNe.jpg",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user_profile.userprofile",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$Naqt6xYzwWQ8$Q1f8KkTWx68ISP5T/p0+2QucrNofr+naZeK8EF7qmpc=",
+        "last_login": "2020-03-23T03:28:38.026Z",
+        "is_superuser": false,
+        "username": "test001",
+        "first_name": "test001",
+        "last_name": "test",
+        "email": "test001@qq.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-03-22T05:29:36.078Z",
+        "sex": 0,
+        "phone": null,
+        "address": null,
+        "interest": null,
+        "image": "avatar/default.jpg",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "user_profile.userprofile",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$100000$FStQEi1uNFrT$eslcsbX47CsMUwaBp+31I+0ydrsh77P1dpcN8+ccS+0=",
+        "last_login": "2020-03-23T07:54:11.972Z",
+        "is_superuser": true,
+        "username": "toor",
+        "first_name": "",
+        "last_name": "",
+        "email": "toor@qq.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-03-23T03:29:38.525Z",
+        "sex": 0,
+        "phone": null,
+        "address": null,
+        "interest": null,
+        "image": "avatar/default.jpg",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "CPUNerd.commentmodel",
+    "pk": 1,
+    "fields": {
+        "cpu": 2,
+        "user": 4,
+        "content": "very good,i like it",
+        "create_time": "2020-03-09T09:52:42.762Z"
+    }
+},
+{
+    "model": "CPUNerd.commentmodel",
+    "pk": 2,
+    "fields": {
+        "cpu": 2,
+        "user": 4,
+        "content": "6666666",
+        "create_time": "2020-03-09T10:09:48.614Z"
+    }
+},
+{
+    "model": "CPUNerd.commentmodel",
+    "pk": 3,
+    "fields": {
+        "cpu": 2,
+        "user": 4,
+        "content": "888888",
+        "create_time": "2020-03-09T10:09:55.822Z"
+    }
+},
+{
+    "model": "CPUNerd.commentmodel",
+    "pk": 4,
+    "fields": {
+        "cpu": 2,
+        "user": 4,
+        "content": "12",
+        "create_time": "2020-03-09T10:10:06.959Z"
+    }
+},
+{
+    "model": "CPUNerd.commentmodel",
+    "pk": 5,
+    "fields": {
+        "cpu": 1,
+        "user": 4,
+        "content": "wewfasdsv",
+        "create_time": "2020-03-09T11:12:03.587Z"
+    }
+},
+{
+    "model": "CPUNerd.commentmodel",
+    "pk": 6,
+    "fields": {
+        "cpu": 4,
+        "user": 4,
+        "content": "dsff ",
+        "create_time": "2020-03-12T13:32:00.324Z"
+    }
+},
+{
+    "model": "CPUNerd.commentmodel",
+    "pk": 7,
+    "fields": {
+        "cpu": 4,
+        "user": 4,
+        "content": "sdfsdfg",
+        "create_time": "2020-03-12T13:32:02.757Z"
+    }
+}
+]

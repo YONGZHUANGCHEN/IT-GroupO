@@ -3,9 +3,9 @@
             $('#upload-img').click();
         });
 
-        // ①为input设定change事件
+        // Set the change event for the input
         $('#upload-img').change(function () {
-        //    ②如果value不为空，调用文件加载方法
+        //    If the value is not empty, call the file load method
             if($(this).val() != ""){
                 fileLoad(this);
             }
@@ -16,19 +16,19 @@
     function change_password() {
         var password = $("#password").val()
         $.post("{% url 'user_profile:reset-password' %}",{"password":password,"csrfmiddlewaretoken":"{{ csrf_token }}"},function(result){
-            alert("修改成功");
+            alert("Modify the success");
           });
 
     }
 
     function fileLoad(ele){
-          //④创建一个formData对象
+          //Create a formData object
         var formData = new FormData();
-        //⑤获取传入元素的val
+        //gets the val of the passed element
         var name = $(ele).val();
-          //⑥获取files
+          //get files
         var files = $(ele)[0].files[0];
-        //⑦将name 和 files 添加到formData中，键值对形式
+        //Name and files will be added to the formData, key-value pairs form
         formData.append("file", files);
         formData.append("name", name);
         formData.append("csrfmiddlewaretoken", "{{ csrf_token }}");
@@ -36,21 +36,20 @@
             url: "{% url 'user_profile:change-avatar' %}",
             type: 'POST',
             data: formData,
-            processData: false,// ⑧告诉jQuery不要去处理发送的数据
-            contentType: false, // ⑨告诉jQuery不要去设置Content-Type请求头
+            processData: false,
+            contentType: false,
             beforeSend: function () {
-               //⑩发送之前的动作
-                //alert("我还没开始发送呢");
+
             },
             success: function (responseStr) {
-               //11成功后的动作
+
                $("#avatar").attr("src", JSON.parse(responseStr)['avatar'] + "?a"+Date());
-               alert("修改成功");
+               alert("Modify the success");
             }
             ,
             error : function (responseStr) {
-                //12出错后的动作
-                alert("出错啦");
+
+                alert("Error !");
             }
         });
     }

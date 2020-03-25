@@ -47,7 +47,7 @@
     left: 50%;
 }
 
-img{
+img#avatar{
     width: 150px;
     height: 150px;
     border-radius: 75px;

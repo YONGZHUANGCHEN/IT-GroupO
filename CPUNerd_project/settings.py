@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'social_django',  # social login
     'bootstrap4',
     'CPUNerd.apps.CpunerdConfig',
     'user_profile.apps.UserProfileConfig',
@@ -72,6 +73,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                # for social login
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -133,14 +138,45 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
-AUTHENTICATION_BACKENDS = ('user_profile.views.CustomBackend',)
+AUTHENTICATION_BACKENDS = (
+    'user_profile.views.CustomBackend',
+
+    # for social login
+    'social_core.backends.facebook.FacebookOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+    )
+
+LOGIN_URL = 'user_profile:login'
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_URL = 'user_profile:logout'
+LOGOUT_REDIRECT_URL = 'user_profile:login'
+
+SOCIAL_AUTH_STRATEGY = 'social_django.strategy.DjangoStrategy'
+SOCIAL_AUTH_STORAGE = 'social_django.models.DjangoStorage'
+
+SOCIAL_AUTH_FACEBOOK_KEY = ''
+SOCIAL_AUTH_FACEBOOK_SECRET = ''
+
+if not SOCIAL_AUTH_FACEBOOK_KEY:
+    try:
+        from fb_secrete import SOCIAL_AUTH_FACEBOOK_KEY
+    except ImportError:
+        print('Please Input Your SOCIAL_AUTH_FACEBOOK_KEY in settings.py')
+        pass
+if not SOCIAL_AUTH_FACEBOOK_SECRET:
+    try:
+        from fb_secrete import SOCIAL_AUTH_FACEBOOK_SECRET
+    except ImportError:
+        print('Please Input Your SOCIAL_AUTH_FACEBOOK_SECRET in settings.py')
+        pass
+
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {'locale': 'en_US', 'fields': 'id, name, email, age_range', }
+SOCIAL_AUTH_FACEBOOK_API_VERSION = '2.10'
+SOCIAL_AUTH_USER_MODEL = AUTH_USER_MODEL
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-
-
-
-TEMPUS_DOMINUS_LOCALIZE = True
-TEMPUS_DOMINUS_INCLUDE_ASSETS = False

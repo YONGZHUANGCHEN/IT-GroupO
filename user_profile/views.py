@@ -12,7 +12,7 @@ from django.core.files.base import ContentFile
 
 # Create your views here.
 
-# 自定义权限认证
+# Custom permission authentication to check if you are logged in or not logged in.
 class CustomBackend(ModelBackend):
     def authenticate(self, username=None, password=None, **kwargs):
         try:
@@ -22,10 +22,10 @@ class CustomBackend(ModelBackend):
         except Exception as e:
             return None
 
-# 登录模块
+# The login module
 class LoginRequiredMixin(object):
     """
-    登陆限定，并指定登陆url
+    Login qualification, and specify the login url
     """
     @classmethod
     def as_view(cls, **initkwargs):
@@ -33,7 +33,7 @@ class LoginRequiredMixin(object):
         return login_required(view, login_url='/user-profile/login/')
 
 
-# 注册模块
+# Registration module
 class RegisterView(View):
     def get(self, request):
         return render(request, 'user_profile/register.html')
@@ -46,24 +46,24 @@ class RegisterView(View):
         password = request.POST.get('password')
         rePassword = request.POST.get('rePassword')
         if password != rePassword:
-            return render(request, 'user_profile/register.html', {'error': '两次密码输入不一致'})
+            return render(request, 'user_profile/register.html', {'error': 'The two passwords are inconsistent'})
 
         user = UserProfile.objects.filter(Q(username=username) | Q(email=email))
-        if user:   # 已存在邮箱或者账号
-            return render(request, 'user_profile/register.html', {'error': '邮箱或者账号已存在'})
+        if user:   # Check your existing email or email account to see if it already exists.
+            return render(request, 'user_profile/register.html', {'error': 'Email or account already exists'})
 
         obj = UserProfile.objects.create(username=username, first_name=firstname,last_name=lastname, email=email)
         obj.set_password(password)
         obj.save()
         return HttpResponseRedirect(reverse('user_profile:login'))
 
-# 退出模块
+# Logout Module
 class LogoutView(View):
     def get(self, request):
         logout(request)
         return HttpResponseRedirect(reverse('user_profile:login'))
 
-# 登录模块
+# login moudle
 class LoginView(View):
     def get(self, request):
         return render(request, 'user_profile/login.html')
@@ -81,11 +81,11 @@ class LoginView(View):
                     request.session.set_expiry(None)
                 return HttpResponseRedirect(reverse("index"))
             else:
-                return render(request, "user_profile/login.html", {"error": "用户未激活！"})
+                return render(request, "user_profile/login.html", {"error": "User not activated!"})
         else:
-            return render(request, "user_profile/login.html", {"error": "用户名或密码错误！"})
+            return render(request, "user_profile/login.html", {"error": "Wrong username or password！"})
 
-# 用户信息模块
+# User information module
 class ProfileView(LoginRequiredMixin, View):
     def get(self, request):
         user_id = request.GET.get("user_id")
@@ -95,7 +95,7 @@ class ProfileView(LoginRequiredMixin, View):
             try:
                 obj = UserProfile.objects.get(id=int(user_id))
             except Exception as e:
-                return render(request, 'user_profile/error.html', {"error": "用户不存在"})
+                return render(request, 'user_profile/error.html', {"error": "The user doesn't exist"})
             if obj.id == int(user_id):
                 return render(request, 'user_profile/profile.html', {"user": obj, 'myself': True})
             return render(request, 'user_profile/profile.html', {"user": obj, 'myself': False})
@@ -116,10 +116,10 @@ class ProfileView(LoginRequiredMixin, View):
         obj.phone = phone
         obj.email = email
         obj.save()
-        return HttpResponseRedirect(reverse("profile") + "?id=" + user_id)
+        return HttpResponseRedirect(reverse("user_profile:profile"))
 
 
-# 修改头像模块
+# change avatar moudle
 class ChangeAvatarView(LoginRequiredMixin, View):
 
     def post(self, request):
@@ -129,7 +129,7 @@ class ChangeAvatarView(LoginRequiredMixin, View):
         obj.save()
         return HttpResponse(json.dumps({'code':0, "avatar": obj.image.url}))
 
-# 重置密码
+# reset password moudle
 class ResetPasswordView(LoginRequiredMixin, View):
     def post(self, request):
         obj = UserProfile.objects.get(id=request.user.id)

@@ -12,7 +12,7 @@ def index(request):
     return render(request, 'CPUNerd/index.html', {'obj': cpu_obj_list})
 
 
-
+#this if for mathc your best cpu view
 class MatchView(LoginRequiredMixin, View):
     def get(self, request):
 
@@ -61,7 +61,7 @@ class CpuDetailView(LoginRequiredMixin, View):
     def post(self, request):
         pass
 
-
+#the rank view
 class RankView(LoginRequiredMixin, View):
     def get(self, request):
         cpu_obj_list = CpuModel.objects.all().order_by("-mark")
@@ -75,14 +75,14 @@ class CommentView(LoginRequiredMixin, View):
         CommentModel.objects.create(user=request.user,cpu=obj,content=request.POST.get("remark", ""))
         return redirect(reverse('CPUNerd:cpu_detail', kwargs={'id': cpu_id}))
 
-
+#this is for cpu category page
 class CategoryView(LoginRequiredMixin, View):
     def get(self, request):
         category = int(request.GET.get("category"))
         cpu_obj_list = CpuModel.objects.filter(category=category)
         return render(request, 'CPUNerd/category.html',{'cpu_obj_list': cpu_obj_list})
 
-
+#new relaesed page
 class NewsView(LoginRequiredMixin, View):
     def get(self, request):
         obj_list = NewsModel.objects.all()
@@ -94,7 +94,7 @@ class NewsDetailView(LoginRequiredMixin, View):
         obj = NewsModel.objects.get(id=int(kwargs['id']))
         return render(request, 'CPUNerd/news_detail.html', {'obj': obj})
 
-
+#Navigation bar search
 def search(request):
     s = request.GET.get('s', '')
     if 'amd' in s.lower():

@@ -2,7 +2,7 @@ from django.db import models
 from user_profile.models import UserProfile
 # Create your models here.
 
-
+#create cpu model
 class CpuModel(models.Model):
     description = models.CharField(max_length=255)
     content = models.TextField()
@@ -17,14 +17,14 @@ class CpuModel(models.Model):
     label = models.CharField(max_length=100, default='i3')
     update_time = models.DateTimeField(auto_now=True)
 
-
+#comment model
 class CommentModel(models.Model):
     cpu = models.ForeignKey(CpuModel, verbose_name='cpu', on_delete=models.CASCADE, related_name='comment_list')
     user = models.ForeignKey(UserProfile, verbose_name='user', on_delete=models.CASCADE)
-    content = models.CharField(verbose_name="内容", max_length=512)
+    content = models.CharField(verbose_name="comment", max_length=512)
     create_time = models.DateTimeField(auto_now_add=True)
 
-
+#this is for new released model
 class NewsModel(models.Model):
     title = models.CharField(verbose_name='title', max_length=255)
     image = models.ImageField(max_length=1000, upload_to='avatar', null=True, blank=True)

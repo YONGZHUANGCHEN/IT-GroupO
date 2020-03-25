@@ -1,6 +1,9 @@
 div.center-content{
+    /*
     background-color: dimgrey;
      margin-top: -20px;
+     */
+
     height: 90%;
     width: 80%;
     /*padding: 3%;
@@ -19,7 +22,7 @@ div.carousel-item {
 div.carousel-item > img{
     width: 100%;
     height: 500px;
-    border: 5px solid #423030
+    /*border: 5px solid #423030*/
 }
 div#match {
     width: 100%;
@@ -58,6 +61,10 @@ div.cpu-list > div.list-group > a.list-group-item:hover{
     color: white;
 }
 
+.item-list:hover{
+    background-color: darkgrey;
+}
+
 div.rank-list{
     margin-top: 20px;
     display: inline-block;
@@ -67,7 +74,7 @@ div.rank-list ol {
     padding: 0px 20px;
 }
 div.rank-list a {
-    color: white;
+    color: black;
 }
 div.rank-list li{height:16px;line-height:16px;overflow:hidden;position:relative;padding:0 70px 0 30px;margin:0 0 10px 0;}
 div.rank-list li em{background:url(../img/mun.gif) no-repeat;width:20px;height:16px;overflow:hidden;display:block;position:absolute;left:0;top:0;text-align:center;font-style:normal;color:#333;}

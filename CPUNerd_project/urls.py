@@ -23,9 +23,11 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
-
+from django.conf.urls import url
+from django.views.static import serve
 
 urlpatterns = [
+    path('social/', include('social_django.urls', namespace='social')),  # social login
     path('', views.index, name='index'),
     path('cpunerd/', include('CPUNerd.urls', namespace='CPUNerd')),
     path('user-profile/', include('user_profile.urls', namespace='user_profile')),
@@ -33,3 +35,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += [
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}, name='media'),
+    url(r'^static/(?P<path>.*)$', serve,  {'document_root': settings.STATIC_ROOT}, name='static'),
+    ]

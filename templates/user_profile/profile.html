@@ -7,7 +7,7 @@
 {% block content %}
     <div class="center-content">
        <div class="profile">
-           <p>个人信息</p>
+           <p>Personal information&nbsp</p>
            <form method="post" action="{% url 'user_profile:profile' %}" id="form1">
                <input name="id" style="display: none;" value="{{ user.id }}"/>
                <div class="left">
@@ -16,7 +16,7 @@
                        <input type="file" name="photo" id="upload-img"/>
                        {% if myself %}
                        <button type="button" class="btn btn-info" id="upload-img-btn">
-                           修改头像
+                           Modify avatar
                        </button>
                        {% endif %}
 
@@ -26,7 +26,7 @@
                            <div>
                             <input type="password" name="password" id="password">
                             <button type="button" class="btn btn-info" onclick="change_password()">
-                               修改密码
+                              &nbsp Change Password &nbsp
                             </button>
                            </div>
                        {% endif %}
@@ -34,28 +34,28 @@
                </div>
                <div class="right">
                    <div>
-                       <span>昵&nbsp&nbsp称:</span>&nbsp&nbsp&nbsp<input name="name" value="{{ user.last_name | format_none}}">
+                       <span>&nbspNickname&nbsp:</span>&nbsp&nbsp&nbsp<input name="name" value="{{ user.last_name | format_none}}">
                    </div>
                    <div>
-                       <span>爱&nbsp&nbsp号:</span>&nbsp&nbsp&nbsp<input name="interest" value="{{ user.interest |format_none }}">
+                       <span>&nbspHobby&nbsp:</span>&nbsp&nbsp&nbsp<input name="interest" value="{{ user.interest |format_none }}">
                    </div>
                    <div>
-                       <span>性&nbsp&nbsp别:</span>&nbsp&nbsp&nbsp
-                       <label style="width: 80px;margin-left: 40px"><input name="sex" type="radio" value="0" {% if user.sex == 0 %} checked {% endif %}/>男 </label>
-                       <label><input name="sex" type="radio" value="1" {% if user.sex == 1 %} checked {% endif %}/>女 </label>
+                       <span>&nbspGender&nbsp:</span>&nbsp&nbsp&nbsp
+                       <label style="width: 80px;margin-left: 40px"><input name="sex" type="radio" value="0" {% if user.sex == 0 %} checked {% endif %}/>&nbspMale </label>
+                       <label><input name="sex" type="radio" value="1" {% if user.sex == 1 %} checked {% endif %}/>&nbspFemale </label>
                    </div>
                    <div>
-                       <span>地&nbsp&nbsp址:</span>&nbsp&nbsp&nbsp<input name="address" value="{{ user.address | format_none}}">
+                       <span>&nbspAddress&nbsp:</span>&nbsp&nbsp&nbsp<input name="address" value="{{ user.address | format_none}}">
                    </div>
                    <div>
-                       <span>手&nbsp机&nbsp号:</span><input name="phone" value="{{ user.phone | format_none }}">
+                       <span>&nbspPhone number&nbsp:</span>&nbsp&nbsp<input name="phone" value="{{ user.phone | format_none }}">
                    </div>
                    <div>
-                       <span>邮&nbsp&nbsp箱:</span>&nbsp&nbsp<input name="email" value="{{ user.email |format_none }}">
+                       <span>&nbspE-maile&nbsp:</span>&nbsp&nbsp<input name="email" value="{{ user.email |format_none }}">
                    </div>
                    {% if myself %}
                    <div class="show-submit">
-                       <input type="submit" class="btn btn-info">
+                       <input type="submit" class="btn btn-info" value = 'submit'}>
                    </div>
                    {% endif %}
                </div>
@@ -86,7 +86,7 @@
     function change_password() {
         var password = $("#password").val()
         $.post("{% url 'user_profile:reset-password' %}",{"password":password,"csrfmiddlewaretoken":"{{ csrf_token }}"},function(result){
-            alert("修改成功");
+            alert("Successfully modified");
           });
 
     }
@@ -115,12 +115,12 @@
             success: function (responseStr) {
                //11成功后的动作
                $("#avatar").attr("src", JSON.parse(responseStr)['avatar'] + "?a"+Date());
-               alert("修改成功");
+               alert("Successfully modified");
             }
             ,
             error : function (responseStr) {
                 //12出错后的动作
-                alert("出错啦");
+                alert("Error ！");
             }
         });
     }
