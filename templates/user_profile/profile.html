@@ -73,9 +73,9 @@
             $('#upload-img').click();
         });
 
-        // ①为input设定change事件
+        // Set the change event for the input
         $('#upload-img').change(function () {
-        //    ②如果value不为空，调用文件加载方法
+        //    If the value is not empty, the file load method is called
             if($(this).val() != ""){
                 fileLoad(this);
             }
@@ -92,13 +92,13 @@
     }
 
     function fileLoad(ele){
-          //④创建一个formData对象
+          //Create a formData object
         var formData = new FormData();
-        //⑤获取传入元素的val
+
         var name = $(ele).val();
-          //⑥获取files
+          //git files
         var files = $(ele)[0].files[0];
-        //⑦将name 和 files 添加到formData中，键值对形式
+        //Add the name and files to formData
         formData.append("file", files);
         formData.append("name", name);
         formData.append("csrfmiddlewaretoken", "{{ csrf_token }}");
@@ -106,20 +106,19 @@
             url: "{% url 'user_profile:change-avatar' %}",
             type: 'POST',
             data: formData,
-            processData: false,// ⑧告诉jQuery不要去处理发送的数据
-            contentType: false, // ⑨告诉jQuery不要去设置Content-Type请求头
+            processData: false,// Tell jQuery not to process data
+            contentType: false, // Tell jQuery not to content Type
             beforeSend: function () {
-               //⑩发送之前的动作
-                //alert("我还没开始发送呢");
+
             },
             success: function (responseStr) {
-               //11成功后的动作
+
                $("#avatar").attr("src", JSON.parse(responseStr)['avatar'] + "?a"+Date());
                alert("Successfully modified");
             }
             ,
             error : function (responseStr) {
-                //12出错后的动作
+
                 alert("Error ！");
             }
         });

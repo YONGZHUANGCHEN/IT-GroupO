@@ -1,4 +1,6 @@
-migrations/
+CPUNERD/migrations/
+user_profile/migrations/
 db.sqlite3
 .idea
-__pycache__/
+CPUNerd/__pycache__/
+user_profile/__pycache__/

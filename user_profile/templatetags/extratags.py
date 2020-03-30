@@ -1,19 +1,14 @@
 # -*- coding:utf-8 -*-
 __version__ = '1.0.0.0'
-"""
-@brief  :   简介
-@details:   详细信息
-@author :   zhphuang
-@date   :   2020-03-04
-"""
+
 import json
 from django import template
 
 register = template.Library()
 
 
-@register.filter(name='format_none')  # 过滤器在模板中使用时的name
-def format_none(value):  # 把传递过来的参数arg替换为'~'
+@register.filter(name='format_none')  # The name of the filter when used in the template
+def format_none(value):  # Replace the arg passed by with '~'
     if not value:
         return ''
     return value
@@ -21,10 +16,7 @@ def format_none(value):  # 把传递过来的参数arg替换为'~'
 
 @register.filter(name="cut")
 def cut(value, arg=80):
-    # text_maker = html2text.HTML2Text()
-    # text_maker.ignore_links = True
-    # text_maker.bypass_tables = True
-    # value = text_maker.handle(value)
+
     value = value.replace("<br></br>", "")
     value = value.replace("&nbsp;", "")
     if len(value) > arg:
